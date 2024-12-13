@@ -8,116 +8,106 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     
     <!-- Logo na aba -->
-    <link rel="icon" href="logo_aba.png" type="image/x-icon">
+    <link rel="icon" href="/images/logo_aba.png" type="image/x-icon">
 
-    <!-- Fonts -->
+    <!-- Fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Roboto:wght@400;700&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-
-    <!-- Stylesheets -->
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Pacifico&family=Poiret+One&family=Quicksand:wght@300..700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
     <!-- Meu Estilo CSS -->
     <link rel="stylesheet" href="css/meu-estilo-principal.css">
-
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid d-flex align-items-center">
-                <!-- Logo do Sitio -->
-                <img class="navbar-brand " src="logo.png" alt="Sitio Bela Vista Logo" width="4%" height="4%">
-                <!-- Título do Site -->
-                <span><h2><b>SÍTIO BELA VISTA</b></h2></span>
-                <!-- Navbar -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navegacao" aria-expanded="false" aria-label="Toggle navigation" aria-controls="menu-navegacao">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="menu-navegacao">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
-                        <li class="nav-item">
-                            <a href="principal.html" class="nav-link active">Principal</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="sobre.html" class="nav-link">Sobre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="contato.html" class="nav-link">Contato</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="login.html" class="nav-link" id="loginn">Entrar <i class="bi bi-person"></i></a>
-                        </li>
-                    </ul> 
-                </div>
+        <nav class="navbar navbar-expand-lg navbar-light mx-5 d-flex justify-content-between align-items-center">
+            <!-- Logo do Sítio -->
+            <img class="navbar-brand img-fluid" src="/images/logo.png" alt="Sítio Bela Vista Logo" style="max-width: 100px; height: auto;">
+            
+            <!-- Título do Site -->
+            <span class="mx-auto"><h2><b>SÍTIO BELA VISTA</b></h2></span>
+            
+            <!-- Navbar -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navegacao" aria-expanded="false" aria-label="Toggle navigation" aria-controls="menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="menu-navegacao">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+                    <li class="nav-item">
+                        <a href="principal.html" class="nav-link active">Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="sobre.html" class="nav-link">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contato.html" class="nav-link">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link active" id="loginn"><span>Entrar <i class="bi bi-person"></i></span></a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
+    
     <main>
         <section>
             <article>
-                <div >
-                    <img src="unnamed.jpg" class="img-fluid" alt="Sitio Bela Vista" width="100%">  
+                <div class="apresentacao position-relative">
+                    <span class="texto-apresentacao">Sítio Bela Vista</span>
+                    <img src="/images/sitio-piscina.jpg" class="img-fluid" alt="Sítio Bela Vista Piscina" width="100%">
                 </div>
-            </article>
-        </section>
-        <section>
-            <article class="container-fluid my-5 py-5" id="block">
-                <div class="container d-flex justify-content-center align-items-start gap-5 my-5 py-5">
-                    <div class="col">
-                        <img src="AirBrush_20241212200243.jpg" class="img-fluid" id="imaem" alt="">
-                    </div>
-                    <div class="col">
-                        <blockquote class="blockquote">
-                            <h2>Lorem, ipsum dolor.</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, aliquam.<br><br>
-                            <button class="btn btn-lg bg-success">Alugue</button>
-                        </blockquote>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <section>
-            <article>
-                
             </article>
         </section>
 
+        <!-- Seção com Imagens e Texto -->
         <section>
-            <article class="container-fluid my-5 py-5 bg-warning">
-                <div class="row gap-5 justify-content-center align-items-center my-5 py-5">
-                    <div class="col-12 col-md-6">
-                        <img src="https://via.placeholder.com/600x300" class="img-fluid" alt="">
+            <article class="d-flex justify-content-center apresentacao2 py-5">
+                <div class="container-fluid row d-flex justify-content-center align-items-center gap-5">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <img src="/images/sitio-frente.jpg" class="img-fluid" id="sitio-frente" alt="Sítio Bela Vista - Frente">
                     </div>
-                    <div class="col-12 col-md-6">
-                        <blockquote class="blockquote">
-                            <h2>Lorem, ipsum dolor.</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, aliquam.<br><br>
-                            <button class="btn btn-lg bg-success">Alugue</button>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <blockquote class="blockquote text-center text-md-start">
+                            <h1>Lorem, ipsum dolor.</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum impedit maiores quo? Consequatur quidem rerum minima modi! Placeat recusandae aliquid odit, earum magni ipsa facere, dolorum est dolor quae inventore.</p>
+                            <a href="#" id="loginn" class="text-decoration-none"><span>Lorem</span></a>
                         </blockquote>
                     </div>
                 </div>
             </article>
         </section>
 
+        <!-- Seção com Calendário -->
         <section>
-            <article class="container-fluid my-5 py-5">
-                <div class="row gap-5 justify-content-center align-items-center my-5 py-5">
-                    <div class="col-12 col-md-6">
-                        <img src="https://via.placeholder.com/600x300" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <blockquote class="blockquote">
-                            <h2>Lorem, ipsum dolor.</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, aliquam.<br><br>
-                            <button class="btn btn-lg bg-success">Alugue</button>
-                        </blockquote>
-                    </div>
+            <article class="container-fluid row justify-content-center align-items-center gap-5 py-5 bg-warning p-3">
+                <blockquote class="blockquote col-12 col-md-6 col-lg-4">
+                    <h1>Lorem, ipsum dolor.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, aliquam.</p>
+                </blockquote>
+
+                <object data="/cod-externo/calendar-08/index.html" type="text/html" class="col-12 col-md-6 col-lg-4"></object>
+            </article>
+        </section>
+
+        <!-- Seção do Mapa -->
+        <section>
+            <article class="container-fluid mt-5 mb-5">
+                <div class="row d-flex gap-5 justify-content-center align-items-center py-5 mx-5">    
+                    <iframe class="col-lg-5 col-md-6 col-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1876.2061684737707!2d-44.586136903212235!3d-19.864803303306974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa73b78e75f69d3%3A0xf701426c46a065f8!2sR.%20Frei%20Le%C3%A3o%2C%20605%20-%20S%C3%A3o%20Francisco%2C%20Par%C3%A1%20de%20Minas%20-%20MG%2C%2035661-167!5e0!3m2!1spt-BR!2sbr!4v1734118846549!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <blockquote class="blockquote col-lg-5 col-md-6 col-12">
+                        <h1>Lorem, ipsum dolor.</h1><br><br>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident temporibus qui eaque consectetur nam, laborum atque velit commodi illo at, voluptatum quis vero deleniti voluptates? Odit accusantium qui earum vero?
+                    </blockquote>
                 </div>
             </article>
         </section>
     </main>
 
+    <!-- Rodapé -->
     <footer class="bg-dark text-white py-4">
         <div class="container d-flex justify-content-between flex-column flex-md-row">
             <p>&copy; 2024 Sítio Bela Vista. Todos os direitos reservados.</p>
@@ -130,7 +120,8 @@
         </div>
     </footer>
 
-    <!-- Bootstrap JS-->
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/fd16eb471e.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
