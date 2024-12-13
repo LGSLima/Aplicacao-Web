@@ -22,28 +22,31 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container">
-                <img class="navbar-brand" src="https://via.placeholder.com/32x32" alt="Placeholder">
-                <span class="navbar-brand"><h2><b>Sítio Bela Vista</b></h2></span>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid d-flex align-items-center">
+                <!-- Logo do Sitio -->
+                <img class="navbar-brand" src="logo.png" alt="Sitio Bela Vista Logo" width="4%" height="4%">
+                <!-- Título do Site -->
+                <span><h2><b>Sítio Bela Vista</b></h2></span>
+                <!-- Navbar -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navegacao" aria-expanded="false" aria-label="Toggle navigation" aria-controls="menu-navegacao">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="menu-navegacao">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a href="principal.html" class="nav-link ">Principal</a>
+                            <a href="principal.html" class="nav-link active">Principal</a>
                         </li>
                         <li class="nav-item">
-                            <a href="sobre.html" class="nav-link active">Sobre</a>
+                            <a href="sobre.html" class="nav-link">Sobre</a>
                         </li>
                         <li class="nav-item">
                             <a href="contato.html" class="nav-link">Contato</a>
                         </li>
-                    </ul>
-                    <form class="d-flex" role="login">
-                        <button class="btn btn-success" type="button"><a href="login.html" class="nav-link">Entrar</a></button>
-                    </form>
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link">Entrar</a>
+                        </li>
+                    </ul> 
                 </div>
             </div>
         </nav>

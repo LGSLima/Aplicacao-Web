@@ -2,3 +2,32 @@
     box-sizing: border-box;
 
 }
+
+.blockquote h2 {
+    font-family: "Shantell Sans", cursive;
+
+}
+
+h2 {
+    color: #04151F;
+}
+
+#imaem {
+    border-top-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    border: solid 2px;
+    border-color: #04151F;
+}
+
+#loginn {
+    border: solid 1px;
+    border-radius: 2px;
+}
+
+#block {
+    background-color: white;
+}
+
+.navbar {
+    background-color: white;
+}
