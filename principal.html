@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Definindo o conjunto de caracteres para o HTML (UTF-8) e a meta tag de visualização para dispositivos móveis -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sítio Bela Vista</title>
-    <!-- Ícones -->
+    <title>Sítio Bela Vista</title> <!-- Título que aparece na aba do navegador -->
+
+    <!-- Link para os ícones de Bootstrap, usados para ícones no site -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     
-    <!-- Logo na aba -->
+    <!-- Ícone do site, aparece na aba do navegador (favicon) -->
     <link rel="icon" href="/images/logo_aba.png" type="image/x-icon">
 
-    <!-- Fonts  -->
+    <!-- Carregamento de fontes do Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Carrega várias fontes para diferentes seções do site -->
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Pacifico&family=Poiret+One&family=Quicksand:wght@300..700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     
-    <!-- Bootstrap CSS -->
+    <!-- Link para o Bootstrap CSS para facilitar a estilização responsiva e o layout -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
-    <!-- Meu Estilo CSS -->
+    <!-- Link para o estilo CSS personalizado para o site -->
     <link rel="stylesheet" href="css/meu-estilo-principal.css">
 </head>
 <body>
+    <!-- Cabeçalho (Header) da página, incluindo a barra de navegação -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light mx-5 d-flex justify-content-between align-items-center">
-            <!-- Logo do Sítio -->
+            <!-- Logo do Sítio no menu -->
             <img class="navbar-brand img-fluid" src="/images/logo.png" alt="Sítio Bela Vista Logo" style="max-width: 100px; height: auto;">
             
-            <!-- Título do Site -->
+            <!-- Título do site centralizado -->
             <span class="mx-auto"><h2><b>SÍTIO BELA VISTA</b></h2></span>
             
-            <!-- Navbar -->
+            <!-- Botão para abrir o menu de navegação em dispositivos móveis -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navegacao" aria-expanded="false" aria-label="Toggle navigation" aria-controls="menu-navegacao">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+            <!-- Menu de navegação que se adapta conforme o tamanho da tela -->
             <div class="collapse navbar-collapse text-center" id="menu-navegacao">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+                    <!-- Links de navegação para outras páginas do site -->
                     <li class="nav-item">
                         <a href="principal.html" class="nav-link active">Principal</a>
                     </li>
@@ -45,35 +52,43 @@
                     <li class="nav-item">
                         <a href="contato.html" class="nav-link">Contato</a>
                     </li>
+                    <!-- Link para a página de login, com ícone de usuário -->
                     <li class="nav-item">
-                        <a href="login.html" class="nav-link active" id="loginn"><span>Entrar <i class="bi bi-person"></i></span></a>
+                        <a href="login.html" class="nav-link active" id="botao-login"><span>Entrar <i class="bi bi-person"></i></span></a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
-    
+
+    <!-- Corpo do site (conteúdo principal) -->
     <main>
+        <!-- Seção de apresentação com imagem e texto centralizado -->
         <section>
             <article>
                 <div class="apresentacao position-relative">
+                    <!-- Texto de apresentação centralizado -->
                     <span class="texto-apresentacao">Sítio Bela Vista</span>
+                    <!-- Imagem do sítio -->
                     <img src="/images/sitio-piscina.jpg" class="img-fluid" alt="Sítio Bela Vista Piscina" width="100%">
                 </div>
             </article>
         </section>
 
-        <!-- Seção com Imagens e Texto -->
+        <!-- Seção com imagens e texto (mini sobre) -->
         <section>
-            <article class="d-flex justify-content-center apresentacao2 py-5">
+            <article class="d-flex justify-content-center mini-sobre py-5">
                 <div class="container-fluid row d-flex justify-content-center align-items-center gap-5">
+                    <!-- Imagem à esquerda -->
                     <div class="col-12 col-md-6 col-lg-4">
                         <img src="/images/sitio-frente.jpg" class="img-fluid" id="sitio-frente" alt="Sítio Bela Vista - Frente">
                     </div>
+                    <!-- Texto à direita -->
                     <div class="col-12 col-md-6 col-lg-4">
                         <blockquote class="blockquote text-center text-md-start">
                             <h1>Lorem, ipsum dolor.</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum impedit maiores quo? Consequatur quidem rerum minima modi! Placeat recusandae aliquid odit, earum magni ipsa facere, dolorum est dolor quae inventore.</p>
+                            <!-- Link de chamada para ação -->
                             <a href="#" id="loginn" class="text-decoration-none"><span>Lorem</span></a>
                         </blockquote>
                     </div>
@@ -81,26 +96,29 @@
             </article>
         </section>
 
-        <!-- Seção com Calendário -->
+        <!-- Seção com calendário -->
         <section>
-            <article class="container-fluid row justify-content-center align-items-center gap-5 py-5 bg-warning p-3">
+            <article class="container-fluid row justify-content-center align-items-center gap-5 py-5 bg-warning p-3 m-0">
                 <blockquote class="blockquote col-12 col-md-6 col-lg-4">
                     <h1>Lorem, ipsum dolor.</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, aliquam.</p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, aliquam.
                 </blockquote>
 
+                <!-- Inclusão de um calendário externo -->
                 <object data="/cod-externo/calendar-08/index.html" type="text/html" class="col-12 col-md-6 col-lg-4"></object>
             </article>
         </section>
 
-        <!-- Seção do Mapa -->
+        <!-- Seção do mapa com a localização do sítio -->
         <section>
             <article class="container-fluid mt-5 mb-5">
                 <div class="row d-flex gap-5 justify-content-center align-items-center py-5 mx-5">    
-                    <iframe class="col-lg-5 col-md-6 col-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1876.2061684737707!2d-44.586136903212235!3d-19.864803303306974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa73b78e75f69d3%3A0xf701426c46a065f8!2sR.%20Frei%20Le%C3%A3o%2C%20605%20-%20S%C3%A3o%20Francisco%2C%20Par%C3%A1%20de%20Minas%20-%20MG%2C%2035661-167!5e0!3m2!1spt-BR!2sbr!4v1734118846549!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!-- Inclusão do Google Maps com a localização do Sítio -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1876.8620745993958!2d-44.70110628863507!3d-19.809289854311494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1734126360286!5m2!1spt-BR!2sbr" class="col-lg-5 col-md-6 col-12" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!-- Descrição sobre o mapa -->
                     <blockquote class="blockquote col-lg-5 col-md-6 col-12">
                         <h1>Lorem, ipsum dolor.</h1><br><br>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident temporibus qui eaque consectetur nam, laborum atque velit commodi illo at, voluptatum quis vero deleniti voluptates? Odit accusantium qui earum vero?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, dolorum!
                     </blockquote>
                 </div>
             </article>
@@ -108,19 +126,22 @@
     </main>
 
     <!-- Rodapé -->
-    <footer class="bg-dark text-white py-4">
-        <div class="container d-flex justify-content-between flex-column flex-md-row">
-            <p>&copy; 2024 Sítio Bela Vista. Todos os direitos reservados.</p>
+    <footer class="bg-success py-4">
+        <div class="container">
+            <!-- Informações de copyright -->
+            <p class="text-white">&copy; 2024 Sítio Bela Vista. Todos os direitos reservados.</p>
+            <!-- Links para páginas de privacidade, termos e redes sociais -->
             <p>
-                <a href="#" class="text-white">Privacidade</a> |
+                <a href="#" class="text-white mx-auto">Privacidade</a> |
                 <a href="#" class="text-white">Termos de Uso</a> |
                 <a href="https://www.instagram.com/sitio_bela_vistta/" class="text-white">Instagram</a>
             </p>
+            <!-- Ícone para voltar ao topo -->
             <a href="#" class="text-white"><i class="bi bi-arrow-up-circle-fill h3"></i></a>
         </div>
     </footer>
 
-    <!-- Scripts -->
+    <!-- Scripts para funcionalidades como ícones e interação do Bootstrap -->
     <script src="https://kit.fontawesome.com/fd16eb471e.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

@@ -1,17 +1,41 @@
+/* Aplica configurações gerais de fontes, cores e modelo de caixa para todos os elementos */
 * {
     box-sizing: border-box;
     color: #253439;
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 450;
+    font-weight: 500;
     font-style: normal;
 }
 
+/* Configura altura e margens do HTML e body */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Estiliza a barra de rolagem para browsers baseados em Gecko (Firefox) */
+body {
+    scrollbar-width: thin;
+    scrollbar-color: #212121;
+}
+
+/* Define altura 100% para a barra de navegação */
+.navbar { height: 100%; }
+
+/* Estilo de font geral para h1 */
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-style: normal;
+}
+
+/* Estilos para a área de apresentação */
 .apresentacao {
     position: relative;
     text-align: center;
 }
 
+/* Estilo do texto de apresentação (centralizado e estilizado) */
 .texto-apresentacao {
     position: absolute;
     top: 50%;
@@ -23,27 +47,30 @@
     text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.6);
     font-family: "Pacifico", cursive;
     border-top: solid 2px;
-    border-bottom: solid 2px; 
+    border-bottom: solid 2px;
 }
 
+/* Ajustes de fonte para telas pequenas */
 @media (max-width: 768px) {
     .texto-apresentacao {
         font-size: 8vw;
     }
 }
 
-.blockquote h1 { font-family: "Pacifico", cursive; }
+/* Estilos de fundo para a classe .bg-warning */
+.bg-warning { background-color: #b29e84 !important; }
 
-.bg-warning {
-    background-color: #b29e84 !important;
-}
+/* Estilos de fundo para a classe .bg-success */
+.bg-success, .btn-success { background-color: #245153 !important; }
 
+/* Estilos para elementos object com tamanho fixo */
 object {
     height: 600px;
     width: 500px;
     z-index: 100;
 }
 
+/* Estilos para o elemento com id #sitio-frente */
 #sitio-frente {
     border-top-left-radius: 130px;
     border-bottom-right-radius: 130px;
@@ -51,13 +78,31 @@ object {
     border-color: #245153;
 }
 
-#loginn span {
+/* Estilos para o botão de login */
+#botao-login span {
     padding: 10px;
     border: solid 1px;
     border-radius: 2px;
 }
 
-.apresentacao2 {
+/* Estilos para a área de descrição */
+.mini-sobre {
     height: 600px;
     width: 100%;
 }
+
+::-webkit-scrollbar {
+    width: 6px;      /* Define a largura da barra de rolagem vertical como 6px */
+    height: 6px;     /* Define a altura da barra de rolagem horizontal como 6px */
+}
+
+::-webkit-scrollbar-track { background-color: #212121; } /* Define a cor de fundo do trilho da scrollbar como um cinza escuro */
+
+::-webkit-scrollbar-thumb {
+    background-color: #b29e84;  /* Define a cor do thumb da scrollbar como um tom de marrom claro */
+    border-radius: 10px;        /* Aplica bordas arredondadas ao thumb */
+}
+
+::-webkit-scrollbar-thumb:hover { background-color: #b29e84a9; } /* Altera a cor do thumb para um tom mais claro quando o mouse estiver sobre ele */
+
+::-webkit-scrollbar-button { background-color: #212121; } /* Define a cor dos botões de rolagem (cima e baixo) como um tom de cinza escuro */
