@@ -1,52 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Definindo o conjunto de caracteres para o HTML (UTF-8) e a meta tag de visualização para dispositivos móveis -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sítio Bela Vista</title>
-    <!-- Ícones -->
+    <title>Sítio Bela Vista</title> <!-- Título que aparece na aba do navegador -->
+
+    <!-- Link para os ícones de Bootstrap, usados para ícones no site -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     
-    <!-- Logo na aba -->
+    <!-- Ícone do site, aparece na aba do navegador (favicon) -->
     <link rel="icon" href="/images/logo_aba.png" type="image/x-icon">
 
-    <!-- Fonts  -->
+    <!-- Carregamento de fontes do Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Carrega várias fontes para diferentes seções do site -->
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Pacifico&family=Poiret+One&family=Quicksand:wght@300..700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     
-    <!-- Bootstrap CSS -->
+    <!-- Link para o Bootstrap CSS para facilitar a estilização responsiva e o layout -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
-    <!-- Meu Estilo CSS -->
-    <link rel="stylesheet" href="css/meu-estilo-principal.css">
+    <!-- Link para o estilo CSS personalizado para o site -->
+    <link rel="stylesheet" href="css/meu-estilo-sobre.css">
 </head>
 <body>
+    <!-- Cabeçalho (Header) da página, incluindo a barra de navegação -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light mx-5 d-flex justify-content-between align-items-center">
-            <!-- Logo do Sítio -->
-            <img class="navbar-brand img-fluid" src="/images/logo.png" alt="Sítio Bela Vista Logo" style="max-width: 100px; height: auto;">
+        <nav class="navbar navbar-expand-lg mx-4">
+            <!-- Logo do Sítio no menu -->
+            <img class="navbar-brand img-fluid" src="/images/logo.png" alt="Sítio Bela Vista Logo" style="max-width: 70px; height: auto;">
             
-            <!-- Título do Site -->
+            <!-- Título do site centralizado -->
             <span class="mx-auto"><h2><b>SÍTIO BELA VISTA</b></h2></span>
             
-            <!-- Navbar -->
+            <!-- Botão para abrir o menu de navegação em dispositivos móveis -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navegacao" aria-expanded="false" aria-label="Toggle navigation" aria-controls="menu-navegacao">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+            <!-- Menu de navegação que se adapta conforme o tamanho da tela -->
             <div class="collapse navbar-collapse text-center" id="menu-navegacao">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+                    <!-- Links de navegação para outras páginas do site -->
                     <li class="nav-item">
-                        <a href="principal.html" class="nav-link active">Principal</a>
+                        <a href="principal.html" class="nav-link">Principal</a>
                     </li>
                     <li class="nav-item">
-                        <a href="sobre.html" class="nav-link">Sobre</a>
+                        <a href="sobre.html" class="nav-link active">Sobre</a>
                     </li>
                     <li class="nav-item">
                         <a href="contato.html" class="nav-link">Contato</a>
                     </li>
+                    <!-- Link para a página de login, com ícone de usuário -->
                     <li class="nav-item">
-                        <a href="login.html" class="nav-link active" id="loginn"><span>Entrar <i class="bi bi-person"></i></span></a>
+                        <a href="login.html" class="nav-link active" id="botao-login"><span>Entrar <i class="bi bi-person"></i></span></a>
                     </li>
                 </ul>
             </div>
@@ -54,62 +62,117 @@
     </header>
     
     <main>
+        <!-- Seção de Introdução com imagem de fundo -->
         <section>
-            <article class="container-fluid my-5 py-5 bg-warning">
-                    <div class="gap-5 d-flex justify-content-center align-items-center my-5 py-5">
-                        <img src="https://via.placeholder.com/600x300" alt="">
-                        <blockquote class="blockquote">
-                            <h2>Lorem, ipsum dolor.</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, aliquam.<br><br>
-                            <button class="btn btn-lg bg-success">Alugue</button>
-                        </blockquote>
-                    </div>
-            </article>
-        <section>
-            <article class="container-fluid my-5 py-5">
-                    <div class="gap-5 d-flex justify-content-center align-items-center my-5 py-5">
-                        <img src="https://via.placeholder.com/600x300" alt="">
-                        <blockquote class="blockquote">
-                            <h2>Lorem, ipsum dolor.</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, aliquam.<br><br>
-                            <button class="btn btn-lg bg-success">Alugue</button>
-                        </blockquote>
-                    </div>
+            <article>
+                <!-- Seção de título do formulário de login, com uma imagem de fundo -->
+                <div class="titulo position-relative">
+                    <!-- Texto de título sobre a seção -->
+                    <span class="titulo-texto">Sobre Nós</span>
+                    <!-- Imagem de fundo com a classe img-fluid para garantir que ela se ajuste à largura do container -->
+                    <img src="/images/sobre-piscina.jpg" class="img-fluid" alt="Sítio Bela Vista Por do Sol" width="100%">
+                </div>
             </article>
         </section>
+    
+        <!-- Seção de Bloco de Texto com Imagem ao lado -->
         <section>
-            <article class="container-fluid my-5 py-5 bg-warning">
-                    <div class="gap-5 d-flex justify-content-center align-items-center my-5 py-5">
-                        <img src="https://via.placeholder.com/600x300" alt="">
-                    </div>
+            <article>
+                <!-- Utilizando flexbox para responsividade e alinhamento -->
+                <div class="gap-5 d-flex flex-column flex-lg-row justify-content-center align-items-center container-fluid bg-warning">
+                    <!-- Bloco de texto à esquerda -->
+                    <blockquote class="blockquote col-lg-5 col-md-6 col-12 text-center mb-3 mb-lg-0">
+                        <h1>Lorem, ipsum dolor.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, aliquam.</p>
+                    </blockquote>
+            
+                    <!-- Imagem à direita -->
+                    <img src="https://via.placeholder.com/600x300" class="sitio-img col-lg-5 col-md-6 col-12" alt="">
+                </div>
             </article>
         </section>
+    
+        <!-- Seção de Imagens e Bloco de Texto Empilhados Responsivamente -->
         <section>
-            <article class="container-fluid my-5 py-5">
-                    <div class="gap-5 d-flex justify-content-center align-items-center my-5 py-5">
-                        <img src="https://via.placeholder.com/600x300" alt="">
-                        <blockquote class="blockquote">
-                            <h2>Lorem, ipsum dolor.</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, aliquam.<br><br>
-                            <button class="btn btn-lg bg-success">Alugue</button>
-                        </blockquote>
+            <article>
+                <div class="gap-5 d-flex flex-column flex-lg-row justify-content-center align-items-center container-fluid">
+                    <div class="row container">
+                        <!-- Primeira Imagem e Texto -->
+                        <div class="col-12 col-md-6 mb-4 mb-md-0">
+                            <!-- Imagem com largura 100% para responsividade -->
+                            <img class="sitio-img w-100" src="https://via.placeholder.com/200x100" alt="">
+                            <!-- Bloco de texto abaixo da imagem -->
+                            <blockquote>
+                                <h2>Lorem, ipsum dolor.</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, aliquid.</p>
+                            </blockquote>
+                        </div>
+            
+                        <!-- Segunda Imagem e Texto -->
+                        <div class="col-12 col-md-6 mb-4 mb-md-0">
+                            <!-- Bloco de texto acima da imagem -->
+                            <blockquote>
+                                <h2>Lorem, ipsum dolor.</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, aliquid.</p>
+                            </blockquote>
+                            <!-- Imagem com largura 100% para responsividade -->
+                            <img class="sitio-img w-100" src="https://via.placeholder.com/200x100" alt="">
+                        </div>
                     </div>
+                </div>
             </article>
         </section>
-    </main>
-    <footer class="bg-dark text-white py-4">
-        <div class="container d-flex justify-content-between">
-            <p>&copy; 2024 Sítio Bela Vista. Todos os direitos reservados.</p>
+    
+        <!-- Seção com imagens e texto centralizados, utilizando grid -->
+        <section>
+            <article>
+                <div class="gap-5 d-grid text-center justify-content-center container-fluid bg-warning">
+                    <!-- Título da seção -->
+                    <div class="titulo position-relative">
+                        <span class="titulo-texto-2">Equipe</span>
+                    </div>
+                    <div class="row container">
+                        <!-- Primeira imagem com texto abaixo -->
+                        <div class="col-6">
+                            <img class="sitio-img" src="https://via.placeholder.com/200x100" alt="Imagem 1">
+                            <blockquote>
+                                <h2 class="pt-5">Lorem, ipsum dolor.</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, aliquid.</p>
+                            </blockquote>
+                        </div>
+            
+                        <!-- Segunda imagem com texto abaixo -->
+                        <div class="col-6">
+                            <img class="sitio-img" src="https://via.placeholder.com/200x100" alt="Imagem 2">
+                            <blockquote>
+                                <h2 class="pt-5">Lorem, ipsum dolor.</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, aliquid.</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>    
+
+    <!-- Rodapé (Footer) -->
+    <footer class="bg-success py-4">
+        <div class="container">
+            <!-- Copyright e mensagem de direitos autorais -->
+            <p class="text-white">&copy; 2024 Sítio Bela Vista. Todos os direitos reservados.</p>
+            <!-- Links para privacidade, termos de uso e redes sociais -->
             <p>
-                <a href="#" class="text-white">Privacidade</a> |
-                <a href="#" class="text-white">Termos de Uso</a> |
+                <a href="#" class="text-white mx-auto">Privacidade</a> <span class="text-white">|</span>
+                <a href="#" class="text-white">Termos de Uso</a> <span class="text-white">|</span>
                 <a href="https://www.instagram.com/sitio_bela_vistta/" class="text-white">Instagram</a>
             </p>
-            <a href="#"><i class="bi bi-arrow-up-circle-fill h3"></i></a>
+            <!-- Ícone de seta para voltar ao topo -->
+            <a href="#" class="text-white"><i class="bi bi-arrow-up-circle-fill h3"></i></a>
         </div>
     </footer>
 
-    <!-- Bootstrap JS-->
+    <!-- Scripts para funcionalidades como ícones e interação do Bootstrap -->
+    <script src="https://kit.fontawesome.com/fd16eb471e.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

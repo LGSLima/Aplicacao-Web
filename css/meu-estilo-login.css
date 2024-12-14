@@ -8,20 +8,19 @@
     font-style: normal;
 }
 
-/* Ajusta a altura e margens do HTML e body para garantir que ocupem toda a altura da tela */
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
 /* Estiliza o body da página para garantir um layout flexível e que ocupe toda a altura */
 body {
     scrollbar-width: thin;  /* Barra de rolagem mais fina no Firefox */
     scrollbar-color: #212121;  /* Cor personalizada para o Firefox */
-    display: flex;  /* Usado para estruturação flexível do layout */
-    flex-direction: column;  /* Organiza o layout na direção de coluna */
-    display: grid;  /* Ativa o layout de grid */
-    grid-template-rows: 1fr auto;  /* Garante que a área principal ocupe o espaço restante, e o rodapé ocupe o mínimo necessário */
+    display: flex; /* Coloca os elementos lado a lado */
+    flex-direction: column; /* Para empilhar os elementos */
+    min-height: 100vh; /* Garante que a altura mínima da página seja 100% da altura da janela */
+    margin: 0; /* Remove margens padrão */
+}
+
+
+main {
+    flex-grow: 1; /* Faz o conteúdo crescer e ocupar o espaço disponível */
 }
 
 /* Garante que a barra de navegação ocupe toda a altura disponível */
