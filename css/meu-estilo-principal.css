@@ -55,6 +55,7 @@ h1 {
 .apresentacao {
     position: relative;
     text-align: center;
+    outline: solid 2px #b29e84;
 }
 
 /* Estilo do texto de apresentação (centralizado e estilizado) */
@@ -80,7 +81,7 @@ h1 {
 }
 
 /* Estilos de fundo para a classe .bg-warning */
-.bg-warning { background-color: #b29e84 !important; }
+.bg-warning { background-color: #FFC857 !important; }
 
 /* Estilos de fundo para a classe .bg-success */
 .bg-success, .btn-success { background-color: #245153 !important; }
@@ -108,6 +109,7 @@ object {
 }
 
 iframe {
+    outline: solid 2px #b29e84;
     border-radius: 5px;
 }
 

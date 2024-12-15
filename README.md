@@ -95,12 +95,6 @@ Contribuições são bem-vindas! Se você encontrar um bug ou tiver sugestões d
 - Crie uma nova branch para suas modificações.
 - Submeta suas alterações via pull request.
 
-## Material de Terceiros
-
-HTML externo:
-
-- **Colorlib** Calendar V08 - [Acesse](https://colorlib.com/wp/template/calendar-08/)
-
 ## Licença
 
 Este projeto está licenciado sob a MIT License.
