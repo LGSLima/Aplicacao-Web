@@ -1,3 +1,40 @@
+/* Configurações gerais para todos os elementos: estilo da caixa, cor do texto e fontes */
+* {
+    box-sizing: border-box;
+    color: #253439;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Estiliza o body da página para garantir um layout flexível e que ocupe toda a altura */
+body {
+    scrollbar-width: thin;  /* Barra de rolagem mais fina no Firefox */
+    scrollbar-color: #212121;  /* Cor personalizada para o Firefox */
+    display: flex; /* Coloca os elementos lado a lado */
+    flex-direction: column; /* Para empilhar os elementos */
+    min-height: 100vh; /* Garante que a altura mínima da página seja 100% da altura da janela */
+    margin: 0; /* Remove margens padrão */
+}
+
+
+main {
+    flex-grow: 1; /* Faz o conteúdo crescer e ocupar o espaço disponível */
+}
+
+/* Garante que a barra de navegação ocupe toda a altura disponível */
+.navbar {
+    height: 100%;
+}
+
+/* Estilos para o botão de login, aplicando bordas e arredondamento */
+#botao-login span {
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 2px;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -5,4 +42,35 @@
 .btn-success {
     background-color: #1f5e6b;
     border-color: #1f5e6b;
+}
+
+/* Estilos para a área de apresentação, permitindo centralização do conteúdo */
+.titulo-login {
+    position: relative;
+    text-align: center;
+}
+
+/* Estiliza o texto dentro da apresentação (centralizado, com sombra e fonte específica) */
+.titulo-texto-login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* Ajuste de centralização perfeita */
+    font-size: 5vw;  /* Tamanho da fonte relativo à largura da tela */
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.6);
+    font-family: "Pacifico", cursive;
+}
+
+/* Estilos para a classe bg-warning, aplicando uma cor de fndo personalizada */
+.bg-warning { background-color: #b29e84 !important; }
+
+/* Estilos para a classe bg-success e btn-success, aplicando uma cor de fundo verde */
+.bg-success, .btn-success { background-color: #245153 !important; }
+
+/* Fonte de contatos */
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-style: normal;
 }
