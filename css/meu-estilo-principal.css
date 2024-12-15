@@ -8,10 +8,32 @@
     font-style: normal;
 }
 
+body {
+    scrollbar-width: thin;  /* Barra de rolagem mais fina no Firefox */
+    scrollbar-color: #212121;  /* Cor personalizada para o Firefox */
+    display: flex; /* Coloca os elementos lado a lado */
+    flex-direction: column; /* Para empilhar os elementos */
+    min-height: 100vh; /* Garante que a altura mínima da página seja 100% da altura da janela */
+    margin: 0; /* Remove margens padrão */
+}
+
+
+main {
+    flex-grow: 1; /* Faz o conteúdo crescer e ocupar o espaço disponível */
+}
+
 /* Configura altura e margens do HTML e body */
 html, body {
     height: 100%;
     margin: 0;
+}
+
+.container {
+    height: 600px;
+}
+
+footer .container {
+    height: auto;
 }
 
 /* Estiliza a barra de rolagem para browsers baseados em Gecko (Firefox) */
@@ -33,6 +55,7 @@ h1 {
 .apresentacao {
     position: relative;
     text-align: center;
+    outline: solid 2px #b29e84;
 }
 
 /* Estilo do texto de apresentação (centralizado e estilizado) */
@@ -58,7 +81,7 @@ h1 {
 }
 
 /* Estilos de fundo para a classe .bg-warning */
-.bg-warning { background-color: #b29e84 !important; }
+.bg-warning { background-color: #FFC857 !important; }
 
 /* Estilos de fundo para a classe .bg-success */
 .bg-success, .btn-success { background-color: #245153 !important; }
@@ -85,10 +108,9 @@ object {
     border-radius: 2px;
 }
 
-/* Estilos para a área de descrição */
-.mini-sobre {
-    height: 600px;
-    width: 100%;
+iframe {
+    outline: solid 2px #b29e84;
+    border-radius: 5px;
 }
 
 ::-webkit-scrollbar {
