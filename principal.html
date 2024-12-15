@@ -70,21 +70,21 @@
                     <!-- Texto de apresentação centralizado -->
                     <span class="texto-apresentacao">Bela Vista</span>
                     <!-- Imagem do sítio -->
-                    <img src="/images/sitio-piscina.jpg" class="img-fluid" alt="Sítio Bela Vista Piscina" width="100%">
+                    <img src="/images/sitio-piscina.jpg" class="img-fluid w-100" alt="Sítio Bela Vista Piscina">
                 </div>
             </article>
         </section>
 
         <!-- Seção com imagens e texto (mini sobre) -->
         <section>
-            <article class="d-flex justify-content-center mini-sobre py-5">
-                <div class="container-fluid row d-flex justify-content-center align-items-center gap-5">
+            <article class="container py-5 d-flex justify-content-center align-items-center">
+                <div class="row justify-content-center align-items-center gap-5">
                     <!-- Imagem à esquerda -->
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <img src="/images/sitio-frente.jpg" class="img-fluid" id="sitio-frente" alt="Sítio Bela Vista - Frente">
+                    <div class="col-12 col-md-6 col-lg-4 text-center">
+                        <img src="/images/sitio-frente.jpg" class="w-100" id="sitio-frente" alt="Sítio Bela Vista - Frente">
                     </div>
                     <!-- Texto à direita -->
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-6">
                         <blockquote class="blockquote text-center text-md-start">
                             <h1>Lorem, ipsum dolor.</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum impedit maiores quo? Consequatur quidem rerum minima modi! Placeat recusandae aliquid odit, earum magni ipsa facere, dolorum est dolor quae inventore.</p>
@@ -97,29 +97,36 @@
         </section>
 
         <!-- Seção com calendário -->
-        <section>
-            <article class="container-fluid row justify-content-center align-items-center gap-5 py-5 bg-warning p-3 m-0">
-                <blockquote class="blockquote col-12 col-md-6 col-lg-4">
-                    <h1>Lorem, ipsum dolor.</h1>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, aliquam.
-                </blockquote>
+        <section class="bg-warning py-5">
+            <article class="container d-flex justify-content-center align-items-center">
+                <div class="row justify-content-center align-items-center gap-5">
+                    <blockquote class="blockquote col-12 col-md-6 col-lg-8 text-center">
+                        <h1>Lorem, ipsum dolor.</h1>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, aliquam.
+                    </blockquote>
 
-                <!-- Inclusão de um calendário externo -->
-                <object data="/cod-externo/calendar-08/index.html" type="text/html" class="col-12 col-md-6 col-lg-4"></object>
+                    <!-- Inclusão de um calendário externo -->
+                    <div class="col-12 col-md-6 col-lg-8 text-center">
+                        <iframe class="w-100" loading="lazy" src="https://www.canva.com/design/DAGRDo_cPRE/KuyNQGdX1VDFT__ViYvi4A/view?embed" style="height: 377px; border: none;" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe> 
+                    </div>
+                </div>
             </article>
         </section>
 
         <!-- Seção do mapa com a localização do sítio -->
-        <section>
-            <article class="container-fluid mt-5 mb-5">
-                <div class="row d-flex gap-5 justify-content-center align-items-center py-5 mx-5">    
-                    <!-- Inclusão do Google Maps com a localização do Sítio -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1876.8620745993958!2d-44.70110628863507!3d-19.809289854311494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1734126360286!5m2!1spt-BR!2sbr" class="col-lg-5 col-md-6 col-12" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="py-5">
+            <article class="container d-flex justify-content-center align-items-center">
+                <div class="row justify-content-center align-items-center gap-5">
+                    <div class="col-12 col-md-6 col-lg-7 text-center">
+                        <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1876.8620745993958!2d-44.70110628863507!3d-19.809289854311494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1734126360286!5m2!1spt-BR!2sbr" style="height: 400px; border: none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                     <!-- Descrição sobre o mapa -->
-                    <blockquote class="blockquote col-lg-5 col-md-6 col-12">
-                        <h1>Lorem, ipsum dolor.</h1><br><br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, dolorum!
-                    </blockquote>
+                    <div class="col-12 col-md-6 col-lg-4 text-center text-md-start">
+                        <blockquote class="blockquote">
+                            <h1>Lorem, ipsum dolor.</h1><br><br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, dolorum!
+                        </blockquote>
+                    </div>
                 </div>
             </article>
         </section>
@@ -128,12 +135,15 @@
     <!-- Rodapé -->
     <footer class="bg-success py-4">
         <div class="container">
-            <!-- Informações de copyright -->
-            <p class="text-white">&copy; 2024 Sítio Bela Vista. Todos os direitos reservados.</p>
+            <div class="d-flex">
+                <!-- Copyright e mensagem de direitos autorais -->
+                <p class="text-white">&copy; 2024 Sítio Bela Vista. Todos os direitos reservados.</p>
+                <a href="cadastro.html" class="btn btn-light ms-auto">Cadastre-se</a></a>
+            </div>
             <!-- Links para páginas de privacidade, termos e redes sociais -->
             <p>
-                <a href="#" class="text-white mx-auto">Privacidade</a> |
-                <a href="#" class="text-white">Termos de Uso</a> |
+                <a href="#" class="text-white mx-2">Privacidade</a>|
+                <a href="#" class="text-white mx-2">Termos de Uso
                 <a href="https://www.instagram.com/sitio_bela_vistta/" class="text-white">Instagram</a>
             </p>
             <!-- Ícone para voltar ao topo -->

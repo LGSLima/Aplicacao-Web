@@ -8,10 +8,32 @@
     font-style: normal;
 }
 
+body {
+    scrollbar-width: thin;  /* Barra de rolagem mais fina no Firefox */
+    scrollbar-color: #212121;  /* Cor personalizada para o Firefox */
+    display: flex; /* Coloca os elementos lado a lado */
+    flex-direction: column; /* Para empilhar os elementos */
+    min-height: 100vh; /* Garante que a altura mínima da página seja 100% da altura da janela */
+    margin: 0; /* Remove margens padrão */
+}
+
+
+main {
+    flex-grow: 1; /* Faz o conteúdo crescer e ocupar o espaço disponível */
+}
+
 /* Configura altura e margens do HTML e body */
 html, body {
     height: 100%;
     margin: 0;
+}
+
+.container {
+    height: 600px;
+}
+
+footer .container {
+    height: auto;
 }
 
 /* Estiliza a barra de rolagem para browsers baseados em Gecko (Firefox) */
@@ -85,10 +107,8 @@ object {
     border-radius: 2px;
 }
 
-/* Estilos para a área de descrição */
-.mini-sobre {
-    height: 600px;
-    width: 100%;
+iframe {
+    border-radius: 5px;
 }
 
 ::-webkit-scrollbar {
