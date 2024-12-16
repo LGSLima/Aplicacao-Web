@@ -1,3 +1,156 @@
+/* Configurações gerais para todos os elementos: estilo de caixa, cor do texto e fontes */
 * {
     box-sizing: border-box;
+    color: #253439;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
+
+/* Estilo geral para o body: layout flexível e altura mínima */
+body {
+    scrollbar-width: thin; /* Barra de rolagem mais fina no Firefox */
+    scrollbar-color: #212121; /* Cor personalizada para o Firefox */
+    display: flex; /* Flexbox para o layout */
+    flex-direction: column; /* Empilhar os elementos verticalmente */
+    min-height: 100vh; /* Garantir que o body ocupe toda a altura da janela */
+    margin: 0; /* Remover margens padrão */
+    padding: 0; /* Remover preenchimento padrão */
+}
+
+/* Principal elemento de conteúdo, ocupando o restante da altura disponível */
+main { flex-grow: 1; } /* Faz o conteúdo crescer e ocupar o espaço restante */
+
+/* Estilo para título h1: fonte cursiva */
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-style: normal;
+}
+
+/* Tamanho fixo para o container-fluid */
+.container-fluid { height: 700px; }/* Define altura fixa para o container */
+
+/* Garante que a barra de navegação ocupe toda a altura disponível */
+.navbar { height: 100%; }
+
+/* Estilos para a área de apresentação com centralização do conteúdo */
+.titulo {
+    position: relative;
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+/* Texto centralizado sobre a imagem de fundo na seção de título */
+.titulo-texto, .titulo-texto-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Ajusta o texto para uma centralização perfeita */
+    font-size: 5vw; /* Tamanho relativo à largura da tela */
+    font-family: "Pacifico", cursive;
+    font-weight: bold;
+}
+
+/* Estilo para a imagem de fundo na seção de título */
+.sitio-header { outline: solid 2px #b29e84; } /* Adiciona uma borda ao redor da imagem */
+
+/* Estilos para o texto de apresentação */
+.titulo-texto {
+    color: white; /* Cor do texto */
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.6); /* Sombra para destacar o texto */
+}
+
+.titulo-texto-2 { color: #253439; } /* Cor do texto para o título secundário */
+
+/* Estilos para a classe bg-warning: cor de fundo personalizada */
+.bg-warning { background-color: #b29e84 !important; }
+
+/* Estilos para a classe bg-success e btn-success: cor de fundo verde */
+.bg-success, .btn-success { background-color: #245153 !important; }
+
+/* Estilização para texto de sucesso (ex: mensagens de sucesso) */
+.text-success { color: #245153; }
+
+/* Estilo para a classe sitio-img (imagens com borda arredondada e personalizada) */
+.sitio-img {
+    border-top-left-radius: 130px; /* Borda superior esquerda arredondada */
+    border-bottom-right-radius: 130px; /* Borda inferior direita arredondada */
+    border: solid 2px;
+    border-color: #b29e84; /* Cor da borda */
+}
+
+/* Container de conteúdo com padding */
+.container-fluid { padding: 20px; }
+
+/* Estilo do bloco de citação (blockquote) para fontes e margens */
+.blockquote h1 {
+    font-size: 2rem; /* Tamanho da fonte para h1 dentro do blockquote */
+    margin-bottom: 1rem;
+}
+
+.blockquote p {
+    font-size: 1rem; /* Tamanho da fonte para o parágrafo */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    color: #555; /* Cor do texto */
+}
+
+/* Estilo para as imagens com classe sito-img */
+.sitio-img {
+    max-width: 100%; /* Garante que a imagem se ajuste ao contêiner */
+    height: auto; /* Mantém as proporções da imagem */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para um efeito mais limpo */
+}
+
+/* Ajustes para telas maiores (largura mínima de 992px) */
+@media (min-width: 992px) {
+    .blockquote h1 {
+        font-size: 2.5rem; /* Aumenta o tamanho da fonte para telas maiores */
+    }
+
+    .blockquote p {
+        font-size: 1.125rem; /* Aumenta o tamanho do texto */
+    }
+}
+
+/* Ajustes para telas pequenas (largura máxima de 768px) */
+@media (max-width: 768px) {
+    .blockquote {
+        margin-bottom: 20px; /* Ajusta a margem inferior do blockquote */
+    }
+}
+
+/* Estilos específicos para o botão de login */
+#botao-login span {
+    padding: 10px; /* Define o espaçamento interno do botão para 10px, criando um espaço entre o conteúdo e as bordas */
+    border: solid 1px; /* Aplica uma borda sólida de 1px em torno do botão */
+    border-radius: 2px; /* Arredonda ligeiramente os cantos da borda, com um raio de 2px */
+}
+
+/* Estilo para o botão de login quando o mouse passa por cima (hover) */
+#botao-login span:hover {
+    background-color: #e6e6e6; /* Muda o fundo para um cinza claro quando o botão é hoverizado */
+    transition: background ease 0.4s; /* Adiciona um efeito de transição suave na mudança de fundo, durando 0.4 segundos */
+}
+
+
+/* Estilos personalizados para a barra de rolagem (Webkit - Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 6px; /* Largura da barra de rolagem vertical */
+    height: 6px; /* Altura da barra de rolagem horizontal */
+}
+
+/* Estilo do trilho da barra de rolagem (área onde a barra se move) */
+::-webkit-scrollbar-track { background-color: #212121; } /* Cor do fundo do trilho */
+
+/* Estilo do "thumb" (parte que se move) da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background-color: #b29e84; /* Cor do "thumb" */
+    border-radius: 10px; /* Bordas arredondadas para o "thumb" */
+}
+
+/* Cor do "thumb" quando em hover */
+::-webkit-scrollbar-thumb:hover { background-color: #b29e84a9; }
+
+/* Estilo dos botões da barra de rolagem */
+::-webkit-scrollbar-button { background-color: #212121; }

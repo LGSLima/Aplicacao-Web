@@ -5,24 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sítio Bela Vista</title> <!-- Título que aparece na aba do navegador -->
-    
+
     <!-- Link para os ícones de Bootstrap, usados para ícones no site -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        
+    
     <!-- Ícone do site, aparece na aba do navegador (favicon) -->
     <link rel="icon" href="/images/logo_aba.png" type="image/x-icon">
-    
+
     <!-- Carregamento de fontes do Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Carrega várias fontes para diferentes seções do site -->
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Pacifico&family=Poiret+One&family=Quicksand:wght@300..700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-       
+    
     <!-- Link para o Bootstrap CSS para facilitar a estilização responsiva e o layout -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        
+    
     <!-- Link para o estilo CSS personalizado para o site -->
-    <link rel="stylesheet" href="css/meu-estilo-login.css">
+    <link rel="stylesheet" href="css/meu-estilo-reserva.css">
 </head>
 <body>
     <!-- Cabeçalho (Header) da página, incluindo a barra de navegação -->
@@ -50,12 +50,12 @@
                         <a href="sobre.html" class="nav-link">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a href="reserva.html" class="nav-link">Reserve</a>
+                        <a href="reserva.html" class="nav-link active">Reserve</a>
                     </li>
                     <li class="nav-item">
                         <a href="contato.html" class="nav-link">Contato</a>
                     </li>
-                    
+        
                     <!-- Link para a página de login, com ícone de usuário -->
                     <li class="nav-item">
                         <a href="login.html" class="nav-link active" id="botao-login"><span>Entrar <i class="bi bi-person"></i></span></a>
@@ -64,58 +64,21 @@
             </div>
         </nav>
     </header>
-
-    <!-- Corpo principal da página -->
     <main>
         <section>
             <article>
                 <!-- Seção de título do formulário de login, com uma imagem de fundo -->
                 <div class="titulo-login position-relative">
-                    <span class="titulo-texto-login">Entrar</span>
+                    <span class="titulo-texto-login">Reserve</span>
                     <img src="/images/por-do-sol.jpg" class="img-fluid img-sol" alt="Sítio Bela Vista Por do Sol" width="100%">
-                </div>
-
-                <!-- Formulário de login -->
-                <div class="container py-4 my-5">
-                    <form class="container col-md-8 col-lg-6">
-                        <!-- Campo para CPF ou E-mail -->
-                        <div class="pt-3">
-                            <label for="login-entrar" class="form-label">CPF ou E-mail:</label>
-                            <input type="text" class="form-control" name="login-entrada" id="login-entrar" required>
-                        </div>
-                        
-                        <!-- Campo para senha -->
-                        <div>
-                            <label for="senha" class="form-label mt-1">Senha:</label>
-                            <input type="password" class="form-control" name="senha" id="pass" required>
-                        </div>
-
-                        <!-- Botões de envio e recuperação de senha -->
-                        <div class="mt-3 d-flex gap-1 justify-content-between">
-                            <button class="btn btn-outline-success">Entrar</button>
-                            <span class="ms-auto">Esqueci minha </span><a href="#" class="text-success link-offset-1 link-offset-2-hover link-underline-success link-underline-opacity-0 link-underline-opacity-75-hover"> senha.</a>
-                        </div>
-
-                        <!-- Linha separadora -->
-                        <div class="d-flex justify-content-center">
-                            <hr width="100%" class="border-1">
-                        </div>
-
-                        <!-- Botões para login com Apple e Google -->
-                    </form>
-                    <form class="container col-md-8 col-lg-6">
-                        <div class="input-group d-flex justify-content-between">
-                            <a href="#" class="btn btn-outline-dark bt-icon">Entre com <i class="bi bi-apple h6"></i></a>
-                            <a href="#" class="btn btn-outline-primary bt-icon">Entre com <i class="bi bi-facebook h6"></i></a>
-                            <a href="#" class="btn btn-outline-danger bt-icon">Entre com <i class="bi bi-google h6"></i></a>
-                        </div>                 
-                    </form>
                 </div>
             </article>
         </section>
-    </main>
+        <section>
 
-    <!-- Rodapé (Footer) -->
+        </section>
+    </main>
+    <!-- Rodapé -->
     <footer class="bg-success py-4">
         <div class="container">
             <div class="d-flex">
@@ -123,14 +86,13 @@
                 <p class="text-white">&copy; 2024 Sítio Bela Vista. Todos os direitos reservados.</p>
                 <a href="cadastro.html" class="btn btn-light ms-auto">Cadastre-se</a></a>
             </div>
-
-            <!-- Links para privacidade, termos de uso e redes sociais -->
+            <!-- Links para páginas de privacidade, termos e redes sociais -->
             <p>
                 <a href="#" class="text-white">Privacidade</a> <span  class="text-white">|</span>
                 <a href="#" class="text-white">Termos de Uso</a> <span  class="text-white">|</span>
                 <a href="https://www.instagram.com/sitio_bela_vistta/" class="text-white">Instagram</a>
             </p>
-            <!-- Ícone de seta para voltar ao topo -->
+            <!-- Ícone para voltar ao topo -->
             <a href="#" class="text-white"><i class="bi bi-arrow-up-circle-fill h3"></i></a>
         </div>
     </footer>
@@ -140,5 +102,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
-
-<!-- comentario -->

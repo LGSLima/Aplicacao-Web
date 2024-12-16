@@ -1,112 +1,143 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sítio Bela Vista</title>
-    <!-- Ícones -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- Meu Estilo CSS -->
-    <link rel="stylesheet" href="css/meu-estilo-contato.css">
-</head>
+    <head>
+        <!-- Definindo o conjunto de caracteres para o HTML (UTF-8) e a meta tag de visualização para dispositivos móveis -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sítio Bela Vista</title> <!-- Título da página que aparece na aba do navegador -->
+        
+        <!-- Link para os ícones de Bootstrap, usados para ícones no site -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+            
+        <!-- Ícone do site, aparece na aba do navegador (favicon) -->
+        <link rel="icon" href="/images/logo_aba.png" type="image/x-icon">
+        
+        <!-- Carregamento de fontes do Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Pacifico&family=Poiret+One&family=Quicksand:wght@300..700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+           
+        <!-- Link para o Bootstrap CSS, facilitando a estilização responsiva e o layout -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+            
+        <!-- Link para o estilo CSS personalizado para o site -->
+        <link rel="stylesheet" href="css/meu-estilo-contato.css">
+    </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <img class="navbar-brand" src="https://via.placeholder.com/32x32" alt="Placeholder">
-                <span class="navbar-brand"><h2><b>Sítio Bela Vista</b></h2></span>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navegacao" aria-expanded="false" aria-label="Toggle navigation" aria-controls="menu-navegacao">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="menu-navegacao">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a href="principal.html" class="nav-link">Principal</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="sobre.html" class="nav-link">Sobre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="contato.html" class="nav-link active">Contato</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="login">
-                        <button class="btn btn-success" type="button"><a href="login.html" class="nav-link">Entrar</a></button>
-                    </form>
-                </div>
+        <nav class="navbar navbar-expand-lg mx-4">
+            <!-- Logo do Sítio no menu -->
+            <img class="navbar-brand img-fluid" src="/images/logo.png" alt="Logo do Sítio Bela Vista" style="max-width: 70px; height: auto;">
+            
+            <!-- Título do site centralizado -->
+            <span class="mx-auto"><h2><b>SÍTIO BELA VISTA</b></h2></span>
+            
+            <!-- Botão de menu para dispositivos móveis -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navegacao" aria-expanded="false" aria-label="Alternar navegação" aria-controls="menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Menu de navegação que se adapta ao tamanho da tela -->
+            <div class="collapse navbar-collapse text-center" id="menu-navegacao">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+                    <li class="nav-item">
+                        <a href="principal.html" class="nav-link">Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="sobre.html" class="nav-link">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="reserva.html" class="nav-link">Reserve</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contato.html" class="nav-link active">Contato</a>
+                    </li>
+                    <!-- Link para a página de login -->
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link active" id="botao-login"><span>Entrar <i class="bi bi-person"></i></span></a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
+    
     <main>
         <section>
-            <article class="container-fluid my-5 py-5 bg-warning">
-                <div class="gap-5 d-flex justify-content-center align-items-center my-5 py-5">
-                    <blockquote class="blockquote text-center">
-                        <h2>Lorem, ipsum dolor.</h2>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, aliquam.<br><br>
-                        <button class="btn btn-lg bg-success">Alugue</button>
-                    </blockquote>
+            <article>
+                <!-- Seção de título do formulário de contato, com imagem de fundo -->
+                <div class="titulo-login position-relative">
+                    <img src="/images/por-do-sol.jpg" class="img-fluid img-sol" alt="Por do Sol no Sítio Bela Vista" width="100%">            
+                    <span class="titulo-texto-login">Contato</span>
                 </div>
             </article>
-            
-            <section>
-                <article class="container d-flex justify-content-center gap-5 align-items-start py-5 my-5">
-                    <div class="container py-2 my-2  col-md-6">
-                        <blockquote class="blockquote">
-                            <h2>Lorem, ipsum.</h2><br>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, porro!</p><br>
-                            <p>Lorem ipsum dolor sit.</p>
-                        </blockquote>
-                    </div>
-                    <form class="container col-md-6">
-                        <div class="input-group my-2 py-2">
-                            <input type="text" class="form-control" id="nome" placeholder="Nome:" required>
-                        </div>
-                        <div class="input-group my-2 py-2">
-                            <input type="email" class="form-control" name="email" id="e-mail" placeholder="E-mail:" required>
-                        </div>
-                        <div class="input-group my-2 py-2">
-                            <input type="tel" name="telefone" id="tel" class="form-control" placeholder="Telefone:" required>
-                        </div>
-                        <div class="input-group my-2 py-2">
-                            <textarea name="area-texto" id="textar" class="form-control" placeholder="Deixe sua mensagem:" required></textarea>
-                        </div>
-                        <div class="input-group my-2 py-2">
-                            <button class="btn btn-success btn-lg">Enviar</button>
-                        </div>
-                    </form>
-                </article>
-            </section>
-
-            <section>
-                <article class="container-fluid my-5 py-5 bg-warning">
-                    <div class="gap-5 d-flex justify-content-center align-items-center my-5 py-5">
-                        <img src="https://via.placeholder.com/600x300" alt="" class="img-fluid">
-                    </div>
-                </article>
-            </section>
         </section>
+        
+        <section>
+            <article class="container d-flex flex-column flex-md-row justify-content-center gap-5 align-items-start py-5 my-5">
+                <!-- Seção de Contatos -->
+                <div class="container py-2 my-2 col-12 col-md-6">
+                    <blockquote class="blockquote">
+                        <h1>Contatos</h1><br>
+                        <p><i class="bi bi-whatsapp"></i> (37) 99971-6345</p><br>
+                        <a href="https://www.instagram.com/sitio_bela_vistta/" style="text-decoration: none;">
+                            <p><i class="bi bi-instagram"></i> @sitio_bela_vistta</p>
+                        </a><br>
+                        <p><i class="bi bi-envelope-at-fill"></i> sitio.belavistta@gmail.com</p>
+                    </blockquote>
+                </div>
+        
+                <!-- Formulário de Contato -->
+                <form class="container col-12 col-md-6">
+                    <div class="input-group my-2 py-2">
+                        <input type="text" class="form-control" id="nome" placeholder="Nome:" required>
+                    </div>
+                    <div class="input-group my-2 py-2">
+                        <input type="email" class="form-control" name="email" id="e-mail" placeholder="E-mail:" required>
+                    </div>
+                    <div class="input-group my-2 py-2">
+                        <input type="tel" name="telefone" id="tel" class="form-control" placeholder="Telefone:" required>
+                    </div>
+                    <div class="input-group my-2 py-2">
+                        <select name="motivo" id="motivo-select" class="form-select">
+                            <option value="" selected disabled>Motivo do contato:</option>
+                            <option value="avaliacao">Avaliação</option>
+                            <option value="duvida">Dúvida</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="reclamacao">Reclamação</option>
+                        </select>
+                    </div>
+                    <div class="input-group my-2 py-2">
+                        <textarea name="area-texto" id="textar" class="form-control" placeholder="Deixe sua mensagem:" required></textarea>
+                    </div>
+                    <div class="input-group my-2 py-2">
+                        <button class="btn btn-outline-success w-100">Enviar</button>
+                    </div>
+                </form>
+            </article>
+        </section>        
     </main>
 
-    <footer class="bg-dark text-white py-4">
-        <div class="container d-flex justify-content-between flex-wrap">
-            <p>&copy; 2024 Sítio Bela Vista. Todos os direitos reservados.</p>
+    <!-- Rodapé -->
+    <footer class="bg-success py-4">
+        <div class="container">
+            <div class="d-flex">
+                <p class="text-white">&copy; 2024 Sítio Bela Vista. Todos os direitos reservados.</p>
+                <a href="cadastro.html" class="btn btn-light ms-auto">Cadastre-se</a>
+            </div>
+
+            <!-- Links para privacidade, termos de uso e redes sociais -->
             <p>
-                <a href="#" class="text-white">Privacidade</a> |
-                <a href="#" class="text-white">Termos de Uso</a> |
+                <a href="#" class="text-white">Privacidade</a> <span class="text-white">|</span>
+                <a href="#" class="text-white">Termos de Uso</a> <span class="text-white">|</span>
                 <a href="https://www.instagram.com/sitio_bela_vistta/" class="text-white">Instagram</a>
             </p>
-            <a href="#"><i class="bi bi-arrow-up-circle-fill h3"></i></a>
+            <!-- Ícone de seta para voltar ao topo -->
+            <a href="#" class="text-white"><i class="bi bi-arrow-up-circle-fill h3"></i></a>
         </div>
     </footer>
 
-    <!-- Bootstrap JS-->
+    <!-- Scripts necessários para o Bootstrap e ícones -->
+    <script src="https://kit.fontawesome.com/fd16eb471e.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
