@@ -1,4 +1,6 @@
-# Aplicação Web com Bootstrap, Bulma e Materialize.
+# Aplicação Web com Bootstrap. (PT-BR)
+
+The english version is right below the pt-br version.
 
 ## Descrição do Projeto
 
@@ -64,9 +66,11 @@ O projeto é composto por 6 páginas principais, cada uma contendo uma estrutura
 
 **Bootstrap**
 
-- **Sistema de Grid**: Utilizado para criar layouts fluidos e responsivos, garantindo que a aplicação seja facilmente visualizada em dispositivos móveis e desktops.
-- **Navbar**: O menu de navegação foi desenvolvido com o componente navbar do Bootstrap, o que garante um menu responsivo e amigável para diferentes dispositivos.
-- **Botões e Cards**: Estilização de botões e cartões com as classes predefinidas de Bootstrap, proporcionando consistência visual e interatividade no site.
+- **Grid System**: Usado para criar layouts fluidos e responsivos, garantindo que a aplicação seja facilmente visualizada em dispositivos móveis e desktops.
+- **Navbar**: O menu de navegação foi desenvolvido utilizando o componente navbar do Bootstrap, oferecendo um menu responsivo e fácil de usar para diferentes dispositivos.
+- **Buttons and Cards**: Estilização de botões e cartões com as classes predefinidas do Bootstrap, garantindo consistência visual e interatividade no site.
+- **Forms**: O Bootstrap facilita a criação de formulários dinâmicos e responsivos, com validação e estilos pré-definidos para campos de entrada, botões e mensagens de erro.
+- **Responsividade**: O Bootstrap utiliza o sistema de grid e componentes responsivos, adaptando automaticamente o layout para diferentes tamanhos de tela, oferecendo uma experiência de usuário fluida em dispositivos móveis e desktops.
 
 ## Estrutura do Código
 
@@ -109,3 +113,119 @@ Contribuições são bem-vindas! Se você encontrar um bug ou tiver sugestões d
 ## Licença
 
 Este projeto está licenciado sob a MIT License.
+
+---
+
+# Web Application with Bootstrap. (EN)
+
+## Project Description
+
+This is a web application project consisting of 6 pages, developed using one of the three popular CSS frameworks: Bootstrap, Bulma, and Materialize. The application is fully responsive and adaptable to different screen sizes, ensuring a consistent and pleasant user experience on both mobile and desktop devices. The project follows an organized structure with a header, main content, and footer, and is designed to be easily scalable and maintainable.
+
+Chosen Framework:
+
+- Bootstrap.
+
+## Project Developers
+
+- **Expedita Nogueira** - [Github](https://github.com/ExpeditaNogueira)
+- **Luís Lima** - [Github](https://github.com/LGSLima)
+
+## Features
+
+- **Header**: With logo and navigation menu, using the navbar structure from the frameworks. The menu contains links that redirect the user to various pages of the application.
+- **Main Section**: Contains the central content of each page, such as informational text, images, icons, and other visual interactions. The layout is organized using the grid and flexbox systems from the frameworks.
+- **Footer**: Includes contact information, useful links to other pages, and social media. The footer is fixed at the bottom of the page on both mobile and desktop devices.
+- **Responsive Design**: The entire interface is responsive, automatically adapting to different screen sizes and devices, thanks to the use of grids and responsive components from the frameworks.
+- **Code Comments**: The code contains detailed explanatory comments on how each framework was used, making it easier to understand and maintain the project in the future.
+
+## Project Structure
+
+The project consists of 6 main pages, each containing a common structure but with specific content. Below are the pages and their descriptions:
+
+**Home Page** (*Home*):
+
+- General introduction to the site, highlighting the main features of the application.
+- Uses Bootstrap to structure an image carousel and call-to-action buttons, ensuring a responsive and modern layout.
+
+**About**:
+
+- Information about the project or the team responsible for the application, including mission, vision, and values.
+- Text styling and layout structure with Bootstrap, using components like cards and columns to organize information clearly and attractively.
+
+**Booking**:
+
+- Details of the booking system, allowing the user to make reservations for services or products easily.
+- The interface is built with Bootstrap, using responsive buttons and forms, creating a modern and smooth user experience.
+
+**Contact**:
+
+- Page with contact information, such as address, phone, and email.
+- Styled with Bootstrap to ensure a clean and organized presentation of information, along with a responsive and functional contact form.
+
+**Login Page**:
+
+- Login screen for users to access their accounts.
+- Styled with Bootstrap, providing a clear and simple interface, with field validation and visual feedback for authentication errors.
+
+**Signup Page**:
+
+- Page for users to sign up for the application, entering information such as name, email, and password.
+- Uses Bootstrap to create a dynamic and intuitive form, with validation and easy navigation, adaptable to different devices.
+
+**User Profile Page**:
+
+- A page dedicated to the user, where they can view and edit their personal information, such as name, email, and password.
+- Organized with Bootstrap, ensuring a fluid and responsive layout, with a focus on usability and user experience.
+
+## Technologies and Frameworks Used
+
+**Bootstrap**
+
+- **Grid System**: Used to create fluid and responsive layouts, ensuring that the application is easily viewable on mobile devices and desktops.
+- **Navbar**: The navigation menu was developed using the Bootstrap navbar component, providing a responsive and user-friendly menu for different devices.
+- **Buttons and Cards**: Button and card styling with Bootstrap’s predefined classes, ensuring visual consistency and interactivity on the site.
+- **Forms**: Bootstrap makes it easy to create dynamic and responsive forms, with validation and predefined styles for input fields, buttons, and error messages.
+- **Responsiveness**: Bootstrap uses the grid system and responsive components, automatically adapting the layout to different screen sizes, offering a smooth user experience on both mobile and desktop devices.
+
+## Code Structure
+
+The code structure follows best development practices, with clear and modular organization:
+
+- **HTML**: Each page is structured with semantic HTML, using appropriate tags to enhance accessibility and SEO (Search Engine Optimization).
+- **CSS**: Additional styling was done using the classes from the frameworks mentioned, but customizations are made when necessary to meet the specific needs of the project.
+- **Comments**: The entire code contains detailed explanatory comments about how the frameworks were applied and how each section of the page works. This helps future developers understand the code and enables efficient maintenance.
+
+## How to Run the Project
+
+1. Clone the Repository:
+
+Clone the repository to your local computer:
+
+```
+git clone https://github.com/seu-usuario/nome-do-repositorio.git
+```
+
+2. Navigate to the Project Directory
+
+Access the folder where the project was cloned:
+
+```
+cd nome-do-repositorio
+```
+
+3. Open the Project in a Browser
+
+Open the index.html file in your preferred browser to view the project.
+
+## Contributions
+
+Contributions are welcome! If you find a bug or have suggestions for improvements, please open an issue or submit a pull request. To contribute:
+
+- Fork this repository.
+- Create a new branch for your changes.
+- Submit your changes via a pull request.
+
+## License
+
+This project is licensed under the MIT License.
