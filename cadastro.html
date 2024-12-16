@@ -1,48 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <!-- Definindo o conjunto de caracteres para o HTML (UTF-8) e a meta tag de visualização para dispositivos móveis -->
+    <!-- Definindo o conjunto de caracteres para o HTML e meta tag de visualização -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sítio Bela Vista</title> <!-- Título que aparece na aba do navegador -->
+    <title>Sítio Bela Vista</title>
 
     <!-- Link para os ícones de Bootstrap, usados para ícones no site -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    
-    <!-- Ícone do site, aparece na aba do navegador (favicon) -->
+
+    <!-- Ícone do site, que aparece na aba do navegador -->
     <link rel="icon" href="/images/logo_aba.png" type="image/x-icon">
 
     <!-- Carregamento de fontes do Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Carrega várias fontes para diferentes seções do site -->
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Pacifico&family=Poiret+One&family=Quicksand:wght@300..700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     
-    <!-- Link para o Bootstrap CSS para facilitar a estilização responsiva e o layout -->
+    <!-- Link para o Bootstrap CSS para layout responsivo -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
-    <!-- Link para o estilo CSS personalizado para o site -->
+    <!-- Link para o estilo CSS personalizado -->
     <link rel="stylesheet" href="css/meu-estilo-cadastro.css">
 </head>
 <body>
-    <!-- Cabeçalho (Header) da página, incluindo a barra de navegação -->
+    <!-- Cabeçalho da página com a barra de navegação -->
     <header>
         <nav class="navbar navbar-expand-lg mx-4">
-            <!-- Logo do Sítio no menu -->
+            <!-- Logo do Sítio -->
             <img class="navbar-brand img-fluid" src="/images/logo.png" alt="Sítio Bela Vista Logo" style="max-width: 70px; height: auto;">
             
-            <!-- Título do site centralizado -->
+            <!-- Título do site, centralizado -->
             <span class="mx-auto"><h2><b>SÍTIO BELA VISTA</b></h2></span>
-            
-            <!-- Botão para abrir o menu de navegação em dispositivos móveis -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navegacao" aria-expanded="false" aria-label="Toggle navigation" aria-controls="menu-navegacao">
+
+            <!-- Botão para abrir o menu em dispositivos móveis -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navegacao" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Menu de navegação que se adapta conforme o tamanho da tela -->
+            <!-- Menu de navegação -->
             <div class="collapse navbar-collapse text-center" id="menu-navegacao">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
-                    <!-- Links de navegação para outras páginas do site -->
                     <li class="nav-item">
                         <a href="principal.html" class="nav-link">Principal</a>
                     </li>
@@ -50,9 +48,11 @@
                         <a href="sobre.html" class="nav-link">Sobre</a>
                     </li>
                     <li class="nav-item">
+                        <a href="reserva.html" class="nav-link">Reserve</a>
+                    </li>
+                    <li class="nav-item">
                         <a href="contato.html" class="nav-link">Contato</a>
                     </li>
-                    <!-- Link para a página de login, com ícone de usuário -->
                     <li class="nav-item">
                         <a href="login.html" class="nav-link active" id="botao-login"><span>Entrar <i class="bi bi-person"></i></span></a>
                     </li>
@@ -65,29 +65,38 @@
     <main>
         <section>
             <article>
-                <!-- Seção de título do formulário de login, com uma imagem de fundo -->
+                <!-- Seção de título do formulário de login -->
                 <div class="titulo-login position-relative">
                     <span class="titulo-texto-login">Cadastro</span>
-                    <img src="/images/por-do-sol.jpg" class="img-fluid" alt="Sítio Bela Vista Por do Sol" width="100%">
+                    <img src="/images/por-do-sol.jpg" class="img-fluid img-sol" alt="Sítio Bela Vista Por do Sol" width="100%">
                 </div>
 
-                <!-- Formulário de login -->
+                <!-- Formulário de cadastro -->
                 <div class="container py-4 my-5">
                     <form class="container col-sm-10 col-md-7 col-lg-8 input-group-lg">
-                        <div class="input-group-md">
-                            <button class="btn btn-outline-dark form-control"><b class="btn-dark">Cadastrar com</b> <i class="bi bi-apple"></i></button>
-                            <button class="btn btn-outline-danger form-control mt-3"><b class="text-danger">Cadastrar com</b> <i class="bi bi-google text-danger"></i></button>                            
+                        <!-- Botões de cadastro com opções de redes sociais -->
+                        <div class="input-group mb-1">
+                            <button class="btn btn-outline-dark form-control bt-text">Cadastrar com <i class="bi bi-apple h6"></i></button>
+                            <button class="btn btn-outline-primary form-control bt-text">Cadastrar com <i class="bi bi-facebook h6"></i></button>
+                            <button class="btn btn-outline-danger form-control bt-text">Cadastrar com <i class="bi bi-google h6"></i></button>
                         </div>
+                    </form>
+                    
+                    <!-- Formulário de cadastro detalhado -->
+                    <form class="container col-sm-10 col-md-7 col-lg-8 input-group-lg">
+                        <!-- Linha separadora -->
                         <div class="d-flex pb-0 justify-content-center">
-                            <hr width="100%" class="border-1">
-                        </div>                        
-                        <div class="">
-                            <label for="login-entrar" class="form-label">Nome completo: <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" name="login-entrada" id="-entrar" required>
+                            <hr width="98%" class="border-1">
+                        </div>
+
+                        <!-- Campos obrigatórios -->
+                        <div>
+                            <label for="nome" class="form-label">Nome completo: <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" name="nome" id="nome" required>
                         </div>
                         <div class="pt-3">
                             <label for="cpf" class="form-label">CPF: <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" id="login-entrar" required>
+                            <input type="text" class="form-control" id="cpf" required>
                         </div>
                         <div class="pt-3">
                             <label for="genero" class="form-label">Gênero: <span class="text-danger">*</span></label>
@@ -96,84 +105,74 @@
                                 <option value="masculino">Masculino</option>
                                 <option value="feminino">Feminino</option>
                                 <option value="nao-binario">Não-binário</option>
-                                <option value="genderqueer">Genderqueer</option>
-                                <option value="genero-fluido">Gênero fluido</option>
-                                <option value="agenero">Agênero</option>
-                                <option value="bigenero">Bigênero</option>
-                                <option value="demiboy">Demiboy</option>
-                                <option value="demigirl">Demigirl</option>
-                                <option value="two-spirit">Two-Spirit</option>
-                                <option value="pangenero">Pangênero</option>
-                                <option value="androgino">Andrógino</option>
-                                <option value="cisgenero">Cisgênero</option>
-                                <option value="transgenero">Transgênero</option>
-                                <option value="questionando">Questionando</option>
-                                <option value="não-especificado">Não Especificado</option>
                                 <option value="outro">Outro</option>
                             </select>
+                        </div>
                         <div class="pt-3">
-                            <label for="data" class="form-label">Data de Nascimento: <span class="text-danger">*</span></label>
-                            <input class="form-control" type="date" name="data" id="date-cadastro" required>
+                            <label for="data-nascimento" class="form-label">Data de Nascimento: <span class="text-danger">*</span></label>
+                            <input class="form-control" type="date" name="data-nascimento" id="data-nascimento" required>
                         </div>
                         <div class="pt-3">
                             <label for="email" class="form-label">E-mail: <span class="text-danger">*</span></label>
-                            <input type="email" class="form-control" name="email" id="e-mail" required>
+                            <input type="email" class="form-control" name="email" id="email" required>
                         </div>
                         <div class="pt-3">
-                            <label for="tele" class="form-label">Telefone: <span class="text-danger">*</span></label>
-                            <input type="tel" name="tele" id="tel" class="form-control" required>
+                            <label for="telefone" class="form-label">Telefone: <span class="text-danger">*</span></label>
+                            <input type="tel" name="telefone" id="telefone" class="form-control" required>
                         </div>
                         <div class="pt-3">
                             <label for="senha" class="form-label">Senha: <span class="text-danger">*</span></label>
-                            <input type="password" name="senha" id="pass" class="form-control" required>
+                            <input type="password" name="senha" id="senha" class="form-control" required>
                         </div>
                         <div class="pt-3">
                             <label for="senha-conf" class="form-label">Confirmar Senha: <span class="text-danger">*</span></label>
-                            <input type="password" name="senha-conf" id="pass-conf" class="form-control" required>
+                            <input type="password" name="senha-conf" id="senha-conf" class="form-control" required>
                         </div>
+                        
+                        <!-- Termos de contrato -->
                         <span class="text-body-secondary" style="font-size: 14px;">(*) Campos obrigatórios</span>
                         <div class="form-check pt-3">
-                            <input type="checkbox" class="form-check-input " name="check-form" id="chkbox" required>
-                            <label for="check-form" class="form-check-label"> Li e concordo com os <span class="text-success">Termos de Contrato.</span><span class="text-danger">*</span></label>
+                            <input type="checkbox" class="form-check-input" name="termos" id="termos" required>
+                            <label for="termos" class="form-check-label">
+                                Li e concordo com os
+                                <a href="#" class="text-success">Termos de Contrato.</a>
+                                <span class="text-danger">*</span>
+                            </label>
                         </div>
-                        <div class="d-flex justify-content-center">
-                            <hr width="100%" class="border-1">
-                        </div>
-                        <!-- Botões de envio e recuperação de senha -->
-                        <div class="pt-1">
-                            <button type="submit" class="btn btn-success form-control">Cadastrar</button>
-                        </div>
-                        <!-- Linha separadora -->
-                        
 
-                        <!-- Botões para login com Apple e Google -->
-                                        
+                        <!-- Botões de ação -->
+                        <div class="d-flex justify-content-center">
+                            <hr width="98%" class="border-1">
+                        </div>
+                        <div class="pt-1">
+                            <button type="submit" class="btn btn-outline-success form-control">Cadastrar</button>
+                        </div>
                     </form>
                 </div>
             </article>
         </section>
     </main>
 
+    <!-- Rodapé -->
     <footer class="bg-success py-4">
         <div class="container">
             <div class="d-flex">
-                <!-- Copyright e mensagem de direitos autorais -->
+                <!-- Direitos autorais -->
                 <p class="text-white">&copy; 2024 Sítio Bela Vista. Todos os direitos reservados.</p>
-                <a href="cadastro.html" class="btn btn-light ms-auto">Cadastre-se</a></a>
+                <a href="cadastro.html" class="btn btn-light ms-auto">Cadastre-se</a>
             </div>
-
-            <!-- Links para privacidade, termos de uso e redes sociais -->
+            <!-- Links para privacidade e redes sociais -->
             <p>
-                <a href="#" class="text-white">Privacidade</a> <span  class="text-white">|</span>
-                <a href="#" class="text-white">Termos de Uso</a> <span  class="text-white">|</span>
+                <a href="#" class="text-white">Privacidade</a> <span class="text-white">|</span>
+                <a href="#" class="text-white">Termos de Uso</a> <span class="text-white">|</span>
                 <a href="https://www.instagram.com/sitio_bela_vistta/" class="text-white">Instagram</a>
             </p>
-            <!-- Ícone de seta para voltar ao topo -->
+            <!-- Ícone para voltar ao topo -->
             <a href="#" class="text-white"><i class="bi bi-arrow-up-circle-fill h3"></i></a>
         </div>
     </footer>
 
-    <!-- Scripts para funcionalidades como ícones e interação do Bootstrap -->
+    <!-- Scripts do Bootstrap e FontAwesome -->
     <script src="https://kit.fontawesome.com/fd16eb471e.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 

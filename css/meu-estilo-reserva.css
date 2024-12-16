@@ -28,11 +28,19 @@ main {
     height: 100%;
 }
 
-/* Estilos para o botão de login, aplicando bordas e arredondamento */
+.img-sol { outline: solid 2px #b29e84; }
+
+/* Estilos específicos para o botão de login */
 #botao-login span {
-    padding: 10px;
-    border: solid 1px;
-    border-radius: 2px;
+    padding: 10px; /* Define o espaçamento interno do botão para 10px, criando um espaço entre o conteúdo e as bordas */
+    border: solid 1px; /* Aplica uma borda sólida de 1px em torno do botão */
+    border-radius: 2px; /* Arredonda ligeiramente os cantos da borda, com um raio de 2px */
+}
+
+/* Estilo para o botão de login quando o mouse passa por cima (hover) */
+#botao-login span:hover {
+    background-color: #e6e6e6; /* Muda o fundo para um cinza claro quando o botão é hoverizado */
+    transition: background ease 0.4s; /* Adiciona um efeito de transição suave na mudança de fundo, durando 0.4 segundos */
 }
 
 /* Estilos para a área de apresentação, permitindo centralização do conteúdo */

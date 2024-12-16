@@ -1,48 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <!-- Definindo o conjunto de caracteres para o HTML (UTF-8) e a meta tag de visualização para dispositivos móveis -->
+    <!-- Definindo o conjunto de caracteres para o HTML (UTF-8) -->
     <meta charset="UTF-8">
+    
+    <!-- Meta tag para responsividade, ajustando o layout para diferentes tamanhos de tela -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sítio Bela Vista</title> <!-- Título que aparece na aba do navegador -->
+    
+    <!-- Título da página que aparece na aba do navegador -->
+    <title>Sítio Bela Vista</title>
 
-    <!-- Link para os ícones de Bootstrap, usados para ícones no site -->
+    <!-- Link para os ícones do Bootstrap, utilizados no site -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     
-    <!-- Ícone do site, aparece na aba do navegador (favicon) -->
+    <!-- Ícone do site (favicon), que aparece na aba do navegador -->
     <link rel="icon" href="/images/logo_aba.png" type="image/x-icon">
 
-    <!-- Carregamento de fontes do Google Fonts -->
+    <!-- Carregamento das fontes do Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Carrega várias fontes para diferentes seções do site -->
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Pacifico&family=Poiret+One&family=Quicksand:wght@300..700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    
-    <!-- Link para o Bootstrap CSS para facilitar a estilização responsiva e o layout -->
+
+    <!-- Link para o Bootstrap CSS, que facilita a criação de layouts responsivos -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
-    <!-- Link para o estilo CSS personalizado para o site -->
+    <!-- Link para o arquivo CSS personalizado do site -->
     <link rel="stylesheet" href="css/meu-estilo-principal.css">
 </head>
 <body>
-    <!-- Cabeçalho (Header) da página, incluindo a barra de navegação -->
+    <!-- Cabeçalho da página com a barra de navegação -->
     <header>
         <nav class="navbar navbar-expand-lg mx-4">
-            <!-- Logo do Sítio no menu -->
+            <!-- Logo do Sítio (exibido na barra de navegação) -->
             <img class="navbar-brand img-fluid" src="/images/logo.png" alt="Sítio Bela Vista Logo" style="max-width: 70px; height: auto;">
             
-            <!-- Título do site centralizado -->
+            <!-- Título centralizado "Sítio Bela Vista" -->
             <span class="mx-auto"><h2><b>SÍTIO BELA VISTA</b></h2></span>
             
-            <!-- Botão para abrir o menu de navegação em dispositivos móveis -->
+            <!-- Botão que permite abrir o menu de navegação em telas menores -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navegacao" aria-expanded="false" aria-label="Toggle navigation" aria-controls="menu-navegacao">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Menu de navegação que se adapta conforme o tamanho da tela -->
+            <!-- Menu de navegação (links para páginas do site) -->
             <div class="collapse navbar-collapse text-center" id="menu-navegacao">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
-                    <!-- Links de navegação para outras páginas do site -->
+                    <!-- Links de navegação -->
                     <li class="nav-item">
                         <a href="principal.html" class="nav-link active">Principal</a>
                     </li>
@@ -50,9 +53,12 @@
                         <a href="sobre.html" class="nav-link">Sobre</a>
                     </li>
                     <li class="nav-item">
+                        <a href="reserva.html" class="nav-link">Reserve</a>
+                    </li>
+                    <li class="nav-item">
                         <a href="contato.html" class="nav-link">Contato</a>
                     </li>
-                    <!-- Link para a página de login, com ícone de usuário -->
+                    <!-- Link de login com ícone de usuário -->
                     <li class="nav-item">
                         <a href="login.html" class="nav-link active" id="botao-login"><span>Entrar <i class="bi bi-person"></i></span></a>
                     </li>
@@ -61,23 +67,23 @@
         </nav>
     </header>
 
-    <!-- Corpo do site (conteúdo principal) -->
+    <!-- Corpo principal do site -->
     <main>
-        <!-- Seção de apresentação com imagem e texto centralizado -->
+        <!-- Seção de apresentação com imagem e texto -->
         <section>
             <article>
                 <div class="apresentacao position-relative">
                     <!-- Texto de apresentação centralizado -->
                     <span class="texto-apresentacao">Sítio Bela Vista</span>
-                    <!-- Imagem do sítio -->
+                    <!-- Imagem de destaque do sítio -->
                     <img src="/images/sitio-piscina.jpg" class="img-fluid w-100" alt="Sítio Bela Vista Piscina">
                 </div>
             </article>
         </section>
 
-        <!-- Seção com imagens e texto (mini sobre) -->
+        <!-- Seção sobre o sítio com imagens e texto -->
         <section>
-            <article class="container py-5 d-flex justify-content-center align-items-center">
+            <article class="container py-5 d-flex justify-content-center align-items-center my-3">
                 <div class="row justify-content-center align-items-center gap-5">
                     <!-- Imagem à esquerda -->
                     <div class="col-12 col-md-6 col-lg-4 text-center">
@@ -86,13 +92,13 @@
                     <!-- Texto à direita -->
                     <div class="col-12 col-md-6 col-lg-6">
                         <blockquote class="blockquote text-center text-md-start">
-                            <h1>Sítio Bela Vista !</h1>
-                            <p>Nosso sítio é o lugar ideal para relaxar, celebrar ou curtir a natureza com conforto. 
+                            <h1>Seu Refúgio Perfeito Está Aqui!</h1>
+                            <p class="py-3">Nosso sítio é o lugar ideal para relaxar, celebrar ou curtir a natureza com conforto. 
                                 Reserve agora e viva momentos especiais em um ambiente tranquilo e aconchegante!
                             </p>
-                            <!-- Link de chamada para ação -->
+                            <!-- Botão de reserva -->
                             <a href="#" id="loginn" class="text-decoration-none"><span>
-                                <a class="btn border" href="#"> Faça sua Reserva ! </a>
+                                <a class="btn btn-lg btn-outline-success border-1" href="reserva.html"> Faça sua Reserva! </a>
                             </span></a>
                         </blockquote>
                     </div>
@@ -100,37 +106,39 @@
             </article>
         </section>
 
-        <!-- Seção com calendário -->
-        <section class="bg-warning py-5">
+        <!-- Seção de disponibilidade com um calendário interativo -->
+        <section class="bg-success py-5">
             <article class="container d-flex justify-content-center align-items-center">
                 <div class="row justify-content-center align-items-center gap-5">
-                    <blockquote class="blockquote col-12 col-md-6 col-lg-8 text-center">
-                        <br><h1>Disponibilidade</h1>
-                        <br>Veja as datas disponíveis e faça sua reserva para viver momentos 
-                        inesquecíveis em meio à natureza. Escolha o melhor período e garanta sua estadia!
+                    <blockquote class="blockquote col-12 col-md-6 col-lg-8 text-center text-white">
+                        <h1>Disponibilidade</h1>
+                        <p class="py-3 text-white">Veja as datas disponíveis e faça sua reserva para viver momentos 
+                        inesquecíveis em meio à natureza. Escolha o melhor período e garanta sua estadia!</p>
                     </blockquote>
 
-                    <!-- Inclusão de um calendário externo -->
-                    <div class="col-12 col-md-6 col-lg-8 text-center">
-                        <iframe class="w-100" loading="lazy" src="https://www.canva.com/design/DAGPhoAcudA/_YysCr-cG86D1DA6t8lcXg/view?embed" style="height: 377px; border: none;" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
+                    <!-- Calendário interativo -->
+                    <div class="col-12 col-md-6 col-lg-6 text-center">
+                        <iframe class="w-100" loading="lazy" src="https://www.canva.com/design/DAGPhoAcudA/_YysCr-cG86D1DA6t8lcXg/view?embed" style="height: 358px; border: none;" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
                     </div>
                 </div>
             </article>
         </section>
 
-        <!-- Seção do mapa com a localização do sítio -->
+        <!-- Seção de mapa com a localização do sítio -->
         <section class="py-5">
-            <article class="container d-flex justify-content-center align-items-center">
-                <div class="row justify-content-center align-items-center gap-5">
-                    <div class="col-12 col-md-6 col-lg-7 text-center">
+            <article class="container maps-container">
+                <div class="row gap-5 maps">
+                    <div class="col-12 col-md-6 col-lg-6 text-center">
+                        <!-- Mapa interativo do Google Maps -->
                         <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1876.8620745993958!2d-44.70110628863507!3d-19.809289854311494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1734126360286!5m2!1spt-BR!2sbr" style="height: 400px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                    <!-- Descrição sobre o mapa -->
                     <div class="col-12 col-md-6 col-lg-4 text-center text-md-start">
                         <blockquote class="blockquote">
-                            <h1>Endereço <i class="bi bi-geo-alt-fill"></i></h1>
-                            Sitio Bela Vista 
-                            <br> Distrito de Penhas                        - Pará de Minas - Mg
+                            <!-- Endereço do Sítio -->
+                            <h1 class="py-3">Endereço <i class="bi bi-geo-alt-fill"></i></h1>
+                            Sítio Bela Vista 
+                            <br> Distrito de Penhas<br>
+                            Pará de Minas - MG
                         </blockquote>
                     </div>
                 </div>
@@ -138,15 +146,15 @@
         </section>
     </main>
 
-    <!-- Rodapé -->
+    <!-- Rodapé do site -->
     <footer class="bg-success py-4">
         <div class="container">
             <div class="d-flex">
-                <!-- Copyright e mensagem de direitos autorais -->
+                <!-- Copyright -->
                 <p class="text-white">&copy; 2024 Sítio Bela Vista. Todos os direitos reservados.</p>
-                <a href="cadastro.html" class="btn btn-light ms-auto">Cadastre-se</a></a>
+                <a href="cadastro.html" class="btn btn-light ms-auto">Cadastre-se</a>
             </div>
-            <!-- Links para páginas de privacidade, termos e redes sociais -->
+            <!-- Links de privacidade, termos e redes sociais -->
             <p>
                 <a href="#" class="text-white">Privacidade</a> <span  class="text-white">|</span>
                 <a href="#" class="text-white">Termos de Uso</a> <span  class="text-white">|</span>
@@ -157,7 +165,7 @@
         </div>
     </footer>
 
-    <!-- Scripts para funcionalidades como ícones e interação do Bootstrap -->
+    <!-- Scripts do Bootstrap e Font Awesome para funcionalidades adicionais -->
     <script src="https://kit.fontawesome.com/fd16eb471e.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
