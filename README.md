@@ -25,29 +25,40 @@ Framework escolhido:
 
 O projeto é composto por 6 páginas principais, cada uma contendo uma estrutura comum, mas com conteúdo específico. A seguir estão as páginas e suas descrições:
 
-**Página Inicial** (*Home*):
-- Apresentação geral do site, com uma introdução e um destaque para as principais funcionalidades da aplicação.
-- Utiliza o Bootstrap para a estruturação de um carrossel de imagens e botões de chamada para ação.
+**Página Principal** (*Home*):
 
-**Sobre Nós** (*About*):
-- Informações sobre o projeto ou a equipe responsável pela aplicação, missão, visão e valores.
-- Estilo de texto com Bulma, aproveitando seus componentes como columns e cards para organizar as informações de forma clara e visualmente atraente.
+- Apresentação geral do site, com uma introdução e destaque para as principais funcionalidades da aplicação.
+- Utiliza o Bootstrap para a estruturação de um carrossel de imagens e botões de chamada para ação, garantindo um layout responsivo e moderno.
 
-**Serviços** (*Services*):
-- Detalhamento dos serviços oferecidos pela aplicação ou empresa, com uma lista de vantagens e descrições.
-- Uso de Materialize para botões e ícones de destaque, além de cartões para exibir os serviços de forma estruturada.
+**Sobre**:
 
-**Galeria** (*Gallery*):
-- Exibição de imagens, vídeos ou qualquer outro conteúdo multimídia relevante para o projeto ou empresa.
-- Organizado em uma grid responsiva usando o sistema de colunas do Bulma para garantir um layout fluido.
+-  Informações sobre o projeto ou a equipe responsável pela aplicação, missão, visão e valores.
+-  Estilo de texto e estruturação com o Bootstrap, utilizando componentes como cards e columns para organizar as informações de forma clara e atraente.
 
-**Contato** (*Contact*):
-- Formulário de contato com campos para nome, e-mail, mensagem e botões de envio.
-- Estilizado com Materialize para um visual mais moderno e intuitivo, com validação de formulário e interação fluida.
+**Reserva**:
 
-**FAQ** (Perguntas Frequentes):
-- Página dedicada a responder às perguntas mais comuns dos usuários sobre o projeto ou serviços.
-- Uso do Bootstrap para estruturar um accordion (menu de perguntas que se expandem), facilitando a navegação e a leitura.
+-  Detalhamento do sistema de reservas, permitindo ao usuário fazer reservas de serviços ou produtos com facilidade.
+-  A interface é construída com o Bootstrap, com botões e formulários responsivos, criando uma experiência de usuário moderna e fluida.
+
+**Contato**:
+
+-  Página com informações de contato, como endereço, telefone e e-mail.
+-  Estilizado com o Bootstrap para garantir uma apresentação limpa e organizada das informações, além de um formulário de contato responsivo e funcional.
+
+**Página de Login**:
+
+-  Tela de login para os usuários acessarem suas contas.
+-  Estilizada com o Bootstrap, oferecendo uma interface clara e simples, com validação de campos e feedback visual para erros de autenticação.
+
+**Página de Cadastro**:
+
+-  Página para o usuário se cadastrar na aplicação, inserindo informações como nome, e-mail e senha.
+-  Usando o Bootstrap para criar um formulário dinâmico e intuitivo, com validação e fácil navegação, adaptável a diferentes dispositivos.
+
+**Página de Perfil do Usuário**:
+
+-  Página dedicada ao usuário, onde ele pode visualizar e editar suas informações pessoais, como nome, e-mail e senha.
+-  Organizado com o Bootstrap, garantindo um layout fluido e responsivo, com foco na usabilidade e experiência do usuário.
 
 ## Tecnologias e Frameworks Utilizados
 
