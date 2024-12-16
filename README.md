@@ -27,7 +27,7 @@ Framework escolhido:
 
 O projeto é composto por 6 páginas principais, cada uma contendo uma estrutura comum, mas com conteúdo específico. A seguir estão as páginas e suas descrições:
 
-**Página Principal** (*Home*):
+**Página Principal**:
 
 - Apresentação geral do site, com uma introdução e destaque para as principais funcionalidades da aplicação.
 - Utiliza o Bootstrap para a estruturação de um carrossel de imagens e botões de chamada para ação, garantindo um layout responsivo e moderno.
@@ -143,7 +143,7 @@ Chosen Framework:
 
 The project consists of 6 main pages, each containing a common structure but with specific content. Below are the pages and their descriptions:
 
-**Home Page** (*Home*):
+**Home Page**:
 
 - General introduction to the site, highlighting the main features of the application.
 - Uses Bootstrap to structure an image carousel and call-to-action buttons, ensuring a responsive and modern layout.
