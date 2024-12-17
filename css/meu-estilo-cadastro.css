@@ -80,6 +80,12 @@ main { flex-grow: 1; } /* Faz o conteúdo crescer e preencher o espaço disponí
     border-color: #245153;  /* Cor da borda verde escuro no hover */
 }
 
+.form-container {
+    background-color: #f8f9fa; /* Cor de fundo clara */
+    border-radius: 10px;       /* Bordas arredondadas */
+    padding: 20px;             /* Espaçamento interno */
+}
+
 /* Estilização personalizada da barra de rolagem para navegadores baseados em Webkit (Chrome, Safari) */
 ::-webkit-scrollbar {
     width: 6px;  /* Largura da barra de rolagem vertical */

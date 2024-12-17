@@ -72,6 +72,12 @@ h1 {
 /* Estilos para o fundo da classe bg-warning */
 .bg-warning { background-color: #b29e84 !important; } /* Cor de fundo personalizada */
 
+.form-container {
+    background-color: #f8f9fa; /* Cor de fundo clara */
+    border-radius: 10px;       /* Bordas arredondadas */
+    padding: 0 15px 10px 15px;           /* Espaçamento interno */
+}
+
 /* Estilos para o botão de login, incluindo padding, bordas e arredondamento */
 #botao-login span {
     padding: 10px; /* Adiciona espaço ao redor do texto */

@@ -52,6 +52,9 @@
                     <li class="nav-item">
                         <a href="contato.html" class="nav-link active">Contato</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="perfil.html" class="nav-link">Perfil</a>
+                    </li>
                     <!-- Link para a página de login -->
                     <li class="nav-item">
                         <a href="login.html" class="nav-link active" id="botao-login"><span>Entrar <i class="bi bi-person"></i></span></a>
@@ -78,20 +81,20 @@
                 <div class="container py-2 my-2 col-12 col-md-6">
                     <blockquote class="blockquote">
                         <h1>Contatos</h1><br>
-                    <a href="https://wa.me/message/WL324WG7A2DMH1" style="text-decoration: none;">       
-                        <p><i class="bi bi-whatsapp"></i> (37) 99971-6345</p>
-                    </a><br>
+                    <a href="https://wa.me/message/WL324WG7A2DMH1"style="text-decoration: none;">       
+                        <i class="bi bi-whatsapp"></i> <span>(37) 99971-6345</span> 
+                    </a><br><br>
                     <a href="https://www.instagram.com/sitio_bela_vistta/" style="text-decoration: none;">
-                        <p><i class="bi bi-instagram"></i> @sitio_bela_vistta</p>
-                    </a><br>
+                        <i class="bi bi-instagram"></i> <span>@sitio_bela_vistta</span>
+                    </a><br><br>
                     <a href="mailto:sitio.belavistta@gmail.com" style="text-decoration: none;">
-                        <p><i class="bi bi-envelope-at-fill"></i> sitio.belavistta@gmail.com</p>
+                        <i class="bi bi-envelope-at-fill"></i> <span>sitio.belavistta@gmail.com</span>
                     </a>
                     </blockquote>
                 </div>
         
                 <!-- Formulário de Contato -->
-                <form class="container col-12 col-md-6">
+                <form class="container col-12 col-md-6 form-container">
                     <div class="input-group my-2 py-2">
                         <input type="text" class="form-control" id="nome" placeholder="Nome:" required>
                     </div>
@@ -103,7 +106,7 @@
                     </div>
                     <div class="input-group my-2 py-2">
                         <select name="motivo" id="motivo-select" class="form-select">
-                            <option value="" selected disabled>Motivo do contato:</option>
+                            <option value="" selected disabled class="text-body-secondary">Motivo do contato:</option>
                             <option value="avaliacao">Avaliação</option>
                             <option value="duvida">Dúvida</option>
                             <option value="feedback">Feedback</option>

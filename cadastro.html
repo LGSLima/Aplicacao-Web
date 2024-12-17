@@ -54,6 +54,10 @@
                         <a href="contato.html" class="nav-link">Contato</a>
                     </li>
                     <li class="nav-item">
+                        <a href="perfil.html" class="nav-link">Perfil</a>
+                    </li>
+
+                    <li class="nav-item">
                         <a href="login.html" class="nav-link active" id="botao-login"><span>Entrar <i class="bi bi-person"></i></span></a>
                     </li>
                 </ul>
@@ -75,20 +79,19 @@
                 <div class="container py-4 my-5">
                     <form class="container col-sm-10 col-md-7 col-lg-8 input-group-lg">
                         <!-- Botões de cadastro com opções de redes sociais -->
-                        <div class="input-group mb-1">
-                            <button class="btn btn-outline-dark form-control bt-text">Cadastrar com <i class="bi bi-apple h6"></i></button>
-                            <button class="btn btn-outline-primary form-control bt-text">Cadastrar com <i class="bi bi-facebook h6"></i></button>
-                            <button class="btn btn-outline-danger form-control bt-text">Cadastrar com <i class="bi bi-google h6"></i></button>
+                        <div class="input-group mb-1 d-flex">
+                            <button class="btn btn-outline-dark bt-text flex-fill">Cadastrar com <i class="bi bi-apple h6"></i></button>
+                            <button class="btn btn-outline-primary bt-text flex-fill">Cadastrar com <i class="bi bi-facebook h6"></i></button>
+                            <button class="btn btn-outline-danger bt-text flex-fill">Cadastrar com <i class="bi bi-google h6"></i></button>
                         </div>
                     </form>
-                    
+                    <!-- Linha separadora -->
+                    <div class="d-flex pb-0 justify-content-center">
+                        <hr width="60%" class="border-1">
+                    </div>
+                        
                     <!-- Formulário de cadastro detalhado -->
-                    <form class="container col-sm-10 col-md-7 col-lg-8 input-group-lg">
-                        <!-- Linha separadora -->
-                        <div class="d-flex pb-0 justify-content-center">
-                            <hr width="98%" class="border-1">
-                        </div>
-
+                    <form class="container col-sm-10 col-md-7 col-lg-8 input-group-lg form-container">
                         <!-- Campos obrigatórios -->
                         <div>
                             <label for="nome" class="form-label">Nome completo: <span class="text-danger">*</span></label>
@@ -128,7 +131,7 @@
                             <label for="senha-conf" class="form-label">Confirmar Senha: <span class="text-danger">*</span></label>
                             <input type="password" name="senha-conf" id="senha-conf" class="form-control" required>
                         </div>
-                        
+                            
                         <!-- Termos de contrato -->
                         <span class="text-body-secondary" style="font-size: 14px;">(*) Campos obrigatórios</span>
                         <div class="form-check pt-3">
@@ -139,13 +142,12 @@
                                 <span class="text-danger">*</span>
                             </label>
                         </div>
-
-                        <!-- Botões de ação -->
                         <div class="d-flex justify-content-center">
                             <hr width="98%" class="border-1">
                         </div>
-                        <div class="pt-1">
-                            <button type="submit" class="btn btn-outline-success form-control">Cadastrar</button>
+                        <!-- Botões de ação -->
+                        <div class="pt-1 d-grid">
+                            <button type="submit" class="btn btn-outline-success">Cadastrar</button>
                         </div>
                     </form>
                 </div>

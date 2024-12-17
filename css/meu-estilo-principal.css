@@ -106,8 +106,7 @@ h1 {
 
 /* Estilo para o elemento com id #sitio-frente (imagem arredondada) */
 #sitio-frente {
-    border-top-left-radius: 130px;  /* Arredonda o canto superior esquerdo */
-    border-bottom-right-radius: 130px;  /* Arredonda o canto inferior direito */
+    border-radius: 5px;
     border: solid 2px;  /* Define uma borda sólida de 2px */
     border-color: #b29e84;  /* Cor da borda */
 }

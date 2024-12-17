@@ -81,6 +81,13 @@ main { flex-grow: 1; } /* Faz o conteúdo crescer e ocupar o espaço restante di
 /* Estilo do botão com ícone */
 .bt-icon { font-weight: bold; }  /* Deixa o texto do ícone em negrito */
 
+
+.form-container {
+    background-color: #f8f9fa; /* Cor de fundo clara */
+    border-radius: 10px;       /* Bordas arredondadas */
+    padding: 0 15px 10px 15px;           /* Espaçamento interno */
+}
+
 /* Estilização personalizada da barra de rolagem para navegadores baseados em Webkit (Chrome, Safari) */
 ::-webkit-scrollbar {
     width: 6px;  /* Largura da barra de rolagem vertical */
