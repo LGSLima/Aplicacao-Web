@@ -76,12 +76,15 @@ h1 {
 
 .card-title { font-weight: bold; }
 
-.card-body { height: 165px; }
+.card-body { 
+    min-height: 165px;
+    max-height: 185px;
+}
 
-.cd-title { 
-    height: 40px;
+.card-body.cd-title { 
+    min-height: 45px;
     padding: 5px;
- }
+}
 
 /* Estilização personalizada da barra de rolagem para navegadores baseados em Webkit (como Chrome e Safari) */
 ::-webkit-scrollbar {
