@@ -19,13 +19,16 @@ body {
 }
 
 
-main {
-    flex-grow: 1; /* Faz o conteúdo crescer e ocupar o espaço disponível */
-}
+main { flex-grow: 1; } /* Faz o conteúdo crescer e ocupar o espaço disponível */
 
 /* Garante que a barra de navegação ocupe toda a altura disponível */
 .navbar {
     height: 100%;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;  /* Fonte estilizada para o título */
+    font-style: normal;
 }
 
 .img-sol { outline: solid 2px #b29e84; }
@@ -70,6 +73,15 @@ main {
 
 /* Estiliza o texto de sucesso, alterando sua cor */
 .text-success { color: #245153; }
+
+.card-title { font-weight: bold; }
+
+.card-body { height: 165px; }
+
+.cd-title { 
+    height: 40px;
+    padding: 5px;
+ }
 
 /* Estilização personalizada da barra de rolagem para navegadores baseados em Webkit (como Chrome e Safari) */
 ::-webkit-scrollbar {
