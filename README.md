@@ -1,6 +1,7 @@
 # Aplicação Web com Bootstrap. (PT-BR)
 
 The english version is right below the pt-br version.
+La versión en español está justo debajo de la versión en inglés.
 
 ## Descrição do Projeto
 
@@ -229,3 +230,119 @@ Contributions are welcome! If you find a bug or have suggestions for improvement
 ## License
 
 This project is licensed under the MIT License.
+
+---
+
+# Aplicación Web con Bootstrap
+
+## Descripción del Proyecto
+
+Este es un proyecto de aplicación web compuesto por 6 o más páginas, desarrollado utilizando uno de los tres frameworks CSS populares: Bootstrap, Bulma y Materialize. La aplicación es totalmente responsiva y adaptable a diferentes tamaños de pantalla, garantizando una experiencia de usuario consistente y agradable en dispositivos móviles y escritorios. El proyecto sigue una estructura organizada con encabezado, contenido principal y pie de página, y fue diseñado para ser fácilmente escalable y de fácil mantenimiento.
+
+Framework elegido:
+
+- Bootstrap.
+
+## Desarrolladores del Proyecto
+
+- **Expedita Nogueira** - [Github](https://github.com/ExpeditaNogueira)
+- **Luís Lima** - [Github](https://github.com/LGSLima)
+
+## Funcionalidades
+
+- **Encabezado**: Con logo y menú de navegación, utilizando la estructura de barra de navegación (navbar) de los frameworks. El menú contiene enlaces que redirigen al usuario a las diversas páginas de la aplicación.
+- **Sección Principal**: Contiene el contenido central de cada página, como texto informativo, imágenes, íconos y otras interacciones visuales. La organización del layout se hace utilizando los sistemas de grid y flexbox de los frameworks.
+- **Pie de Página**: Incluye información de contacto, enlaces útiles para otras páginas y redes sociales. El pie de página es fijo en la parte inferior de la página en dispositivos móviles y escritorios.
+- **Diseño Responsivo**: Toda la interfaz es responsiva, adaptándose automáticamente a diferentes tamaños de pantalla y dispositivos, gracias al uso de las grids y componentes responsivos de los frameworks.
+- **Comentarios en el Código**: El código contiene comentarios explicativos detallados sobre cómo se utilizó cada framework, facilitando la comprensión y el mantenimiento futuro.
+
+## Estructura del Proyecto
+
+El proyecto está compuesto por 6 páginas principales, cada una con una estructura común, pero con contenido específico. A continuación se describen las páginas y sus descripciones:
+
+**Página Principal**:
+
+- Presentación general del sitio, con una introducción y resaltado de las principales funcionalidades de la aplicación.
+- Utiliza Bootstrap para estructurar un carrusel de imágenes y botones de llamada a la acción, garantizando un layout responsivo y moderno.
+
+**Sobre**:
+
+- Información sobre el proyecto o el equipo responsable de la aplicación, misión, visión y valores.
+- Estilo de texto y estructuración con Bootstrap, utilizando componentes como cards y columns para organizar la información de manera clara y atractiva.
+
+**Reserva**:
+
+- Detalle del sistema de reservas, permitiendo al usuario hacer reservas de servicios con facilidad.
+- La interfaz se construye con Bootstrap, con botones y formularios responsivos, creando una experiencia de usuario moderna y fluida.
+
+**Contacto**:
+
+- Página con información de contacto, como dirección, teléfono y correo electrónico, además de la posibilidad de interactuar con el equipo.
+- Estilizado con Bootstrap para garantizar una presentación limpia y organizada de la información, además de un formulario de contacto responsivo y funcional.
+
+**Página de Login**:
+
+- Pantalla de login para que los usuarios accedan a sus cuentas.
+- Estilizada con Bootstrap, ofreciendo una interfaz clara y simple, con validación de campos y retroalimentación visual para errores de autenticación.
+
+**Página de Registro**:
+
+- Página para que el usuario se registre en la aplicación, introduciendo información como nombre, correo electrónico y contraseña.
+- Usando Bootstrap para crear un formulario dinámico e intuitivo, con validación y fácil navegación, adaptable a diferentes dispositivos.
+
+**Página de Perfil del Usuario**:
+
+- Página dedicada al usuario, donde puede ver y editar su información personal, como nombre, correo electrónico y contraseña.
+- Organizado con Bootstrap, garantizando un layout fluido y responsivo, con énfasis en la usabilidad y experiencia del usuario.
+
+## Tecnologías y Frameworks Utilizados
+
+**Bootstrap**
+
+- **Grid System**: Usado para crear layouts fluidos y responsivos, garantizando que la aplicación sea fácilmente visualizada en dispositivos móviles y escritorios.
+- **Navbar**: El menú de navegación fue desarrollado utilizando el componente navbar de Bootstrap, ofreciendo un menú responsivo y fácil de usar para diferentes dispositivos.
+- **Buttons and Cards**: Estilización de botones y tarjetas con las clases predefinidas de Bootstrap, garantizando consistencia visual e interactividad en el sitio.
+- **Forms**: Bootstrap facilita la creación de formularios dinámicos y responsivos, con validación y estilos predefinidos para campos de entrada, botones y mensajes de error.
+- **Responsividad**: Bootstrap utiliza el sistema de grid y componentes responsivos, adaptando automáticamente el layout para diferentes tamaños de pantalla, ofreciendo una experiencia de usuario fluida en dispositivos móviles y escritorios.
+
+## Estructura del Código
+
+La estructura del código sigue buenas prácticas de desarrollo, con una organización clara y modular:
+
+- **HTML**: Cada página está estructurada con HTML semántico, utilizando las etiquetas apropiadas para mejorar la accesibilidad y el SEO (Search Engine Optimization).
+- **CSS**: Se realizaron personalizaciones adicionales utilizando las clases de los frameworks mencionados, pero también hay ajustes cuando es necesario para satisfacer las necesidades específicas del proyecto.
+- **Comentarios**: Todo el código contiene comentarios explicativos detallados sobre cómo se aplicaron los frameworks y cómo funciona cada sección de la página. Esto facilita la comprensión del código para desarrolladores futuros y permite un mantenimiento eficiente.
+
+## Cómo Ejecutar el Proyecto
+
+1. Clonar el Repositorio:
+
+Clone el repositorio en su computadora local:
+
+```
+git clone https://github.com/tu-usuario/nombre-del-repositorio.git
+```
+
+2. Navegar hasta el Directorio del Proyecto
+
+Acceda a la carpeta donde se clonó el proyecto:
+
+```
+cd nombre-del-repositorio
+```
+
+3. Abrir el Proyecto en el Navegador
+
+Abra el archivo index.html en un navegador de su preferencia para visualizar el proyecto.
+
+## Contribuciones
+
+¡Las contribuciones son bienvenidas! Si encuentra un error o tiene sugerencias de mejoras, abra un issue o envíe un pull request. Para contribuir:
+
+- Haga un fork de este repositorio.
+- Cree una nueva rama para sus modificaciones.
+- Envíe sus cambios mediante un pull request.
+
+## Licencia
+
+Este proyecto está licenciado bajo la MIT License.
