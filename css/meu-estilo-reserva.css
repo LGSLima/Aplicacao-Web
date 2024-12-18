@@ -65,14 +65,29 @@ h1 {
     font-family: "Pacifico", cursive;
 }
 
-/* Estilos para a classe bg-warning, aplicando uma cor de fndo personalizada */
-.bg-warning { background-color: #b29e84 !important; }
-
 /* Estilos para a classe bg-success e btn-success, aplicando uma cor de fundo verde */
-.bg-success, .btn-success { background-color: #245153 !important; }
+.bg-success, .btn-success { 
+    background-color: #245153 !important;  /* Cor de fundo verde escuro */
+    border-color: #245153;  /* Cor da borda */
+}
 
-/* Estiliza o texto de sucesso, alterando sua cor */
-.text-success { color: #245153; }
+/* Estilos para botões de sucesso com contorno */
+.btn-outline-success {
+    color: #245153;  /* Cor do texto */
+    border-color: #245153;  /* Cor da borda */
+}
+
+/* Estilos para o botão de sucesso com contorno quando é hoverizado */
+.btn-outline-success:hover {
+    background-color: #245153;  /* Cor de fundo verde escuro */
+    border-color: #245153;  /* Cor da borda */
+}
+
+/* Estilos para o texto de sucesso (cor verde escura) */
+.text-success { color: #245153; } /* Cor do texto */
+
+/* Estilo do botão com ícone */
+.bt-icon { font-weight: bold; }  /* Deixa o texto do ícone em negrito */
 
 .card-title { font-weight: bold; }
 

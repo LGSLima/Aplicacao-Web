@@ -95,16 +95,16 @@
                 
                 <!-- Formulário de Contato -->
                 <form class="container col-12 col-md-6 form-container">
-                    <div class="input-group my-2 py-2">
+                    <div class="input-group my-3">
                         <input type="text" class="form-control" id="nome" placeholder="Nome:" required>
                     </div>
-                    <div class="input-group my-2 py-2">
+                    <div class="input-group my-3">
                         <input type="email" class="form-control" name="email" id="e-mail" placeholder="E-mail:" required>
                     </div>
-                    <div class="input-group my-2 py-2">
+                    <div class="input-group my-3">
                         <input type="tel" name="telefone" id="tel" class="form-control" placeholder="Telefone:" required>
                     </div>
-                    <div class="input-group my-2 py-2">
+                    <div class="input-group my-3">
                         <select name="motivo" id="motivo-select" class="form-select">
                             <option value="" selected disabled class="text-body-secondary">Motivo do contato:</option>
                             <option value="avaliacao">Avaliação</option>
@@ -113,11 +113,10 @@
                             <option value="reclamacao">Reclamação</option>
                         </select>
                     </div>
-                    <div class="input-group my-2 py-2">
-                        <textarea name="area-texto" id="textar" class="form-control" placeholder="Deixe sua mensagem:" required></textarea>
-                    </div>
-                    <div class="input-group my-2 py-2">
-                        <button class="btn btn-outline-success w-100">Enviar</button>
+                    <textarea name="area-texto" id="textar" class="form-control my-2" placeholder="Deixe sua mensagem:" required></textarea>
+                    <div class="input-group d-flex">
+                        <button class="btn btn-outline-success my-2 flex-fill" type="submit">Enviar</button>
+                        <button class="btn btn-outline-danger my-2 flex-fill" type="reset">Reiniciar</button>
                     </div>
                 </form>
             </article>
