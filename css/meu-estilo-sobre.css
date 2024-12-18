@@ -28,9 +28,6 @@ h1 {
     font-style: normal;
 }
 
-/* Tamanho fixo para o container-fluid */
-.container-fluid { height: 700px; }/* Define altura fixa para o container */
-
 /* Garante que a barra de navegação ocupe toda a altura disponível */
 .navbar { height: 100%; }
 
@@ -154,3 +151,20 @@ h1 {
 
 /* Estilo dos botões da barra de rolagem */
 ::-webkit-scrollbar-button { background-color: #212121; }
+
+/*foto de equipe */
+#equipe{
+    width: 250px;
+    height: 250px;
+    
+}
+
+/* Estilo para as imagens com classe equipe-img */
+.equipe-img {
+    max-width: 100%; /* Garante que a imagem se ajuste ao contêiner */
+    height: auto; /* Mantém as proporções da imagem */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para um efeito mais limpo */
+    border: solid 2px;
+    border-color: #b29e84; /* Cor da borda */
+}
