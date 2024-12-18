@@ -4,7 +4,7 @@ The english version is right below the pt-br version.
 
 ## Descrição do Projeto
 
-Este é um projeto de aplicação web composta por 6 páginas, desenvolvido utilizando um dos três frameworks CSS populares: Bootstrap, Bulma e Materialize. A aplicação é totalmente responsiva e adaptável a diferentes tamanhos de tela, garantindo uma experiência de usuário consistente e agradável em dispositivos móveis e desktops. O projeto segue uma estrutura organizada com cabeçalho, conteúdo principal e rodapé, e foi projetado para ser facilmente escalável e de fácil manutenção.
+Este é um projeto de aplicação web composta por 6 ou mais páginas, desenvolvido utilizando um dos três frameworks CSS populares: Bootstrap, Bulma e Materialize. A aplicação é totalmente responsiva e adaptável a diferentes tamanhos de tela, garantindo uma experiência de usuário consistente e agradável em dispositivos móveis e desktops. O projeto segue uma estrutura organizada com cabeçalho, conteúdo principal e rodapé, e foi projetado para ser facilmente escalável e de fácil manutenção.
 
 Framework escolhido:
 
@@ -39,12 +39,12 @@ O projeto é composto por 6 páginas principais, cada uma contendo uma estrutura
 
 **Reserva**:
 
--  Detalhamento do sistema de reservas, permitindo ao usuário fazer reservas de serviços ou produtos com facilidade.
+-  Detalhamento do sistema de reservas, permitindo ao usuário fazer reservas de serviços com facilidade.
 -  A interface é construída com o Bootstrap, com botões e formulários responsivos, criando uma experiência de usuário moderna e fluida.
 
 **Contato**:
 
--  Página com informações de contato, como endereço, telefone e e-mail.
+-  Página com informações de contato, como endereço, telefone e e-mail, além da possibilidade de interação com a equipe.
 -  Estilizado com o Bootstrap para garantir uma apresentação limpa e organizada das informações, além de um formulário de contato responsivo e funcional.
 
 **Página de Login**:
@@ -160,7 +160,7 @@ The project consists of 6 main pages, each containing a common structure but wit
 
 **Contact**:
 
-- Page with contact information, such as address, phone, and email.
+- Page with contact information, such as address, phone, email and the possibility to comunicate with the team.
 - Styled with Bootstrap to ensure a clean and organized presentation of information, along with a responsive and functional contact form.
 
 **Login Page**:
