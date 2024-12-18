@@ -1,46 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <!-- Definindo o conjunto de caracteres para o HTML e meta tag de visualização -->
+    <!-- Definindo o conjunto de caracteres UTF-8 e a meta tag de visualização responsiva para dispositivos móveis -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título da página que aparece na aba do navegador -->
     <title>Sítio Bela Vista</title>
 
-    <!-- Link para os ícones de Bootstrap, usados para ícones no site -->
+    <!-- Link para os ícones do Bootstrap, usados para ícones no site -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <!-- Ícone do site, que aparece na aba do navegador -->
+    <!-- Ícone do site (logo que aparece na aba do navegador) -->
     <link rel="icon" href="/images/logo_aba.png" type="image/x-icon">
 
-    <!-- Carregamento de fontes do Google Fonts -->
+    <!-- Preconectar fontes do Google Fonts para otimizar o carregamento -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Pacifico&family=Poiret+One&family=Quicksand:wght@300..700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     
-    <!-- Link para o Bootstrap CSS para layout responsivo -->
+    <!-- Link para o Bootstrap CSS (biblioteca para layout responsivo e componentes prontos) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
-    <!-- Link para o estilo CSS personalizado -->
+    <!-- Link para o arquivo de estilo CSS personalizado -->
     <link rel="stylesheet" href="css/meu-estilo-cadastro.css">
 </head>
 <body>
-    <!-- Cabeçalho da página com a barra de navegação -->
+    <!-- Cabeçalho da página com barra de navegação -->
     <header>
+        <!-- Barra de navegação do site -->
         <nav class="navbar navbar-expand-lg mx-4">
-            <!-- Logo do Sítio -->
+            <!-- Logo do Sítio, exibido na barra de navegação -->
             <img class="navbar-brand img-fluid" src="/images/logo.png" alt="Sítio Bela Vista Logo" style="max-width: 70px; height: auto;">
             
-            <!-- Título do site, centralizado -->
+            <!-- Título do site centralizado -->
             <span class="mx-auto"><h2><b>SÍTIO BELA VISTA</b></h2></span>
 
-            <!-- Botão para abrir o menu em dispositivos móveis -->
+            <!-- Botão de menu para dispositivos móveis -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-navegacao" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Menu de navegação -->
+            <!-- Menu de navegação que aparece quando o menu é expandido -->
             <div class="collapse navbar-collapse text-center" id="menu-navegacao">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+                    <!-- Links de navegação para páginas do site -->
                     <li class="nav-item">
                         <a href="principal.html" class="nav-link">Principal</a>
                     </li>
@@ -57,6 +61,7 @@
                         <a href="perfil.html" class="nav-link">Perfil</a>
                     </li>
 
+                    <!-- Link de login, que indica que o usuário não está logado -->
                     <li class="nav-item">
                         <a href="login.html" class="nav-link active" id="botao-login"><span>Entrar <i class="bi bi-person"></i></span></a>
                     </li>
@@ -69,9 +74,10 @@
     <main>
         <section>
             <article>
-                <!-- Seção de título do formulário de login -->
+                <!-- Seção de título do formulário de login, com imagem de fundo -->
                 <div class="titulo-login position-relative">
                     <span class="titulo-texto-login">Cadastro</span>
+                    <!-- Imagem de fundo da seção -->
                     <img src="/images/por-do-sol.jpg" class="img-fluid img-sol" alt="Sítio Bela Vista Por do Sol" width="100%">
                 </div>
 
@@ -79,7 +85,7 @@
                 <div class="container py-4 my-5">
                     <form class="container col-sm-10 col-md-7 col-lg-8 input-group-lg">
                         <!-- Botões de cadastro com opções de redes sociais -->
-                        <div class="input-group mb-1 d-flex">
+                        <div class="input-group d-flex">
                             <button class="btn btn-outline-dark bt-text flex-fill">Cadastrar com <i class="bi bi-apple h6"></i></button>
                             <button class="btn btn-outline-primary bt-text flex-fill">Cadastrar com <i class="bi bi-facebook h6"></i></button>
                             <button class="btn btn-outline-danger bt-text flex-fill">Cadastrar com <i class="bi bi-google h6"></i></button>
@@ -93,8 +99,8 @@
                     </div>
                         
                     <!-- Formulário de cadastro detalhado -->
-                    <form class="container col-sm-10 col-md-7 col-lg-8 input-group-lg form-container">
-                        <!-- Campos obrigatórios -->
+                    <form class="container col-sm-10 col-md-7 col-lg-8 input-group-lg bg-light rounded p-3">
+                        <!-- Campos obrigatórios com rótulos e inputs -->
                         <div>
                             <label for="nome" class="form-label">Nome completo: <span class="text-danger">*</span></label>
                             <input type="text" class="form-control" name="nome" id="nome" required>
@@ -144,11 +150,9 @@
                                 <span class="text-danger">*</span>
                             </label>
                         </div>
-                        <div class="d-flex justify-content-center">
-                            <hr width="98%" class="border-1">
-                        </div>
-                        <!-- Botões de ação -->
-                        <div class="pt-1 d-grid">
+                        
+                        <!-- Botão de submissão do formulário -->
+                        <div class="pt-3 d-grid">
                             <button type="submit" class="btn btn-outline-success">Cadastrar</button>
                         </div>
                     </form>

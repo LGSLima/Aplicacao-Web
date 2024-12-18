@@ -1,152 +1,156 @@
-/* Configurações gerais de fontes, cores e modelo de caixa para todos os elementos */
+/* Configurações gerais de fontes e estilos padrão para todos os elementos */
 * {
-    box-sizing: border-box;  /* Aplica o modelo de caixa "border-box" a todos os elementos */
-    color: #253439;  /* Define a cor do texto padrão */
-    font-family: "Quicksand", sans-serif;  /* Define a fonte padrão */
-    font-optical-sizing: auto;
-    font-weight: 500;  /* Peso da fonte */
-    font-style: normal;  /* Define estilo de fonte como normal */
+    box-sizing: border-box; /* Garante que o modelo de caixa inclua margens e bordas no tamanho total */
+    color: #253439; /* Define a cor padrão do texto */
+    font-family: "Quicksand", sans-serif; /* Fonte principal para o texto */
+    font-optical-sizing: auto; /* Ajusta automaticamente a renderização óptica da fonte */
+    font-weight: 500; /* Define um peso médio para a fonte */
+    font-style: normal; /* Estilo padrão sem itálico */
 }
 
 /* Configurações de layout do corpo da página */
 body {
-    scrollbar-width: thin;  /* Barra de rolagem mais fina no Firefox */
-    scrollbar-color: #212121;  /* Cor personalizada para o Firefox */
-    display: flex;  /* Exibe os elementos em linha */
-    flex-direction: column;  /* Empilha os elementos verticalmente */
-    min-height: 100vh;  /* Altura mínima de 100% da janela de visualização */
-    margin: 0;  /* Remove margens padrão */
+    scrollbar-width: thin; /* Barra de rolagem mais fina em navegadores Firefox */
+    scrollbar-color: #212121; /* Personalização das cores da barra de rolagem no Firefox */
+    display: flex; /* Ativa o modelo flexbox */
+    flex-direction: column; /* Organiza os elementos em uma coluna */
+    min-height: 100vh; /* Garante que o corpo ocupe no mínimo toda a altura da tela */
+    margin: 0; /* Remove margens padrão */
 }
 
-main { flex-grow: 1; } /* Faz o conteúdo crescer para ocupar o espaço disponível */
+/* Permite que o conteúdo principal se ajuste ao espaço disponível */
+main {
+    flex-grow: 1;
+}
 
-/* Garante que o html e body ocupem 100% da altura da página */
+/* Garante que o html e o body ocupem 100% da altura da página */
 html, body {
     height: 100%;
     margin: 0;
 }
 
-/* Estiliza a barra de rolagem para browsers baseados em Gecko (Firefox) */
-body {
-    scrollbar-width: thin;  /* Barra de rolagem fina */
-    scrollbar-color: #212121;  /* Cor do "thumb" e trilho da barra de rolagem */
-}
-
-/* Configuração de altura para a barra de navegação */
-.navbar { height: 100%; } /* A barra de navegação ocupará toda a altura */
-
-/* Estilo da fonte para o título (h1) */
+/* Estilo para o título principal (h1) */
 h1 {
-    font-family: 'Pacifico', cursive;  /* Fonte estilizada para o título */
-    font-style: normal;
+    font-family: 'Pacifico', cursive; /* Fonte estilizada para maior destaque */
+    font-style: normal; /* Mantém o estilo normal */
 }
 
-/* Estilos para a área de apresentação (com imagem e texto centralizado) */
+/* Estilo para elementos iframe (ex.: calendário ou mapas) */
+iframe {
+    outline: solid 2px #b29e84; /* Contorno com cor consistente */
+    border-radius: 5px; /* Bordas arredondadas para aparência harmoniosa */
+}
+
+/* Configuração para a barra de navegação */
+.navbar {
+    height: 100%; /* Define a altura da barra de navegação */
+}
+
+/* Estilização da área de apresentação */
 .apresentacao {
-    position: relative;  /* Permite posicionamento absoluto dentro dessa área */
-    text-align: center;  /* Centraliza o texto */
-    outline: solid 2px #b29e84;  /* Contorno de 2px de cor marrom */
+    position: relative; /* Posicionamento relativo para permitir ajuste interno */
+    text-align: center; /* Centraliza o texto dentro da área */
+    outline: solid 2px #b29e84; /* Adiciona um contorno marrom claro */
 }
 
-/* Estilização do texto de apresentação */
+/* Estilo do texto dentro da área de apresentação */
 .texto-apresentacao {
-    position: absolute;  /* Posiciona o texto de forma absoluta */
-    top: 50%;  /* Centraliza o texto verticalmente */
-    left: 50%;  /* Centraliza o texto horizontalmente */
-    transform: translate(-50%, -50%);  /* Ajuste para centralização perfeita */
-    font-size: 7vw;  /* Tamanho da fonte proporcional à largura da tela */
-    color: white;  /* Cor do texto */
-    font-weight: bold;  /* Deixa o texto em negrito */
-    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.6);  /* Sombra do texto */
-    font-family: "Pacifico", cursive;  /* Fonte cursiva */
-    border-top: solid 2px;  /* Borda superior */
-    border-bottom: solid 2px;  /* Borda inferior */
+    position: absolute; /* Posicionamento absoluto dentro da área */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajuste fino para centralização exata */
+    font-size: 7vw; /* Define o tamanho da fonte proporcional à largura da tela */
+    color: white; /* Cor do texto em branco */
+    font-weight: bold; /* Aplica negrito ao texto */
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.6); /* Adiciona uma sombra ao texto */
+    font-family: "Pacifico", cursive; /* Fonte decorativa */
+    border-top: solid 2px; /* Linha no topo do texto */
+    border-bottom: solid 2px; /* Linha na base do texto */
 }
 
-/* Ajustes para o texto em telas pequenas */
+/* Ajustes responsivos para telas menores */
 @media (max-width: 768px) {
     .texto-apresentacao {
-        font-size: 8vw;  /* Aumenta o tamanho da fonte em telas menores */
+        font-size: 8vw; /* Aumenta o tamanho do texto em dispositivos menores */
     }
 }
 
-/* Estilização das classes bg-success e btn-success */
+/* Estilos para botões com tema de sucesso */
 .bg-success, .btn-success {
-    background-color: #245153 !important;  /* Cor de fundo verde escuro */
-    border-color: #245153;  /* Cor da borda */
+    background-color: #245153 !important; /* Fundo verde escuro para destaque */
+    border-color: #245153; /* Borda combinando com o fundo */
 }
 
-/* Estilo para botões de sucesso com borda */
+/* Estilo para botões com contorno de sucesso */
 .btn-outline-success {
-    color: #245153;  /* Cor do texto */
-    border-color: #245153;  /* Cor da borda */
+    color: #245153; /* Texto com cor de destaque */
+    border-color: #245153; /* Borda definida com a mesma cor */
 }
 
-/* Efeito de hover nos botões de sucesso */
+/* Efeito ao passar o mouse sobre os botões de sucesso */
 .btn-outline-success:hover {
-    background-color: #245153;  /* Cor de fundo durante hover */
-    border-color: #245153;  /* Cor da borda durante hover */
+    background-color: #245153; /* Fundo muda para verde escuro */
+    border-color: #245153; /* Mantém a borda consistente */
 }
 
-/* Estilização dos containers de mapa */
+/* Estilização do container de mapas */
 .maps-container {
-    display: flex;  /* Flexbox para organizar os itens dentro do container */
-    align-items: center;  /* Alinha verticalmente os itens */
-    justify-content: center;  /* Alinha horizontalmente os itens */
-    width: 100%;
+    display: flex; /* Ativa o flexbox */
+    align-items: center; /* Centraliza verticalmente os itens */
+    justify-content: center; /* Centraliza horizontalmente os itens */
+    width: 100%; /* Ocupa toda a largura disponível */
 }
 
-/* Estiliza as colunas de mapas */
+/* Configuração para colunas dentro do container de mapas */
 .maps {
-    display: flex;  /* Exibe os elementos dentro da coluna em linha */
-    justify-content: center;  /* Alinha horizontalmente os itens */
-    align-items: center;  /* Alinha verticalmente os itens */
-    width: 100%;
+    display: flex; /* Exibe os elementos em linha */
+    justify-content: center; /* Centraliza horizontalmente os itens */
+    align-items: center; /* Centraliza verticalmente os itens */
+    width: 100%; /* Preenche toda a largura */
 }
 
-/* Estilo para o elemento com id #sitio-frente (imagem arredondada) */
+/* Estilo para a imagem principal do sítio */
 #sitio-frente {
-    border-radius: 5px;
-    border: solid 2px;  /* Define uma borda sólida de 2px */
-    border-color: #b29e84;  /* Cor da borda */
+    border-radius: 5px; /* Bordas arredondadas para suavidade */
+    border: solid 2px #b29e84; /* Adiciona uma borda com cor consistente */
 }
 
-/* Estiliza o botão de login */
+/* Estilo para o botão de login */
 #botao-login span {
-    padding: 10px;  /* Adiciona espaço interno ao texto */
-    border: solid 1px;  /* Borda de 1px */
-    border-radius: 2px;  /* Borda arredondada */
+    padding: 10px; /* Espaçamento interno para melhor interação */
+    border: solid 1px; /* Define a borda */
+    border-radius: 2px; /* Bordas levemente arredondadas */
 }
 
-/* Estilo para o botão de login quando o mouse passa por cima (hover) */
+/* Efeito de hover para o botão de login */
 #botao-login span:hover {
-    background-color: #e6e6e6; /* Muda o fundo para um cinza claro quando o botão é hoverizado */
-    transition: background ease 0.4s; /* Adiciona um efeito de transição suave na mudança de fundo, durando 0.4 segundos */
+    background-color: #e6e6e6; /* Fundo muda para cinza claro no hover */
+    transition: background ease 0.4s; /* Suaviza a transição do fundo */
 }
 
-/* Estilo para iframes (inclusive calendário e mapa) */
-iframe {
-    outline: solid 2px #b29e84;  /* Borda sólida ao redor do iframe */
-    border-radius: 5px;  /* Borda arredondada */
-}
-
-/* Estilização das barras de rolagem no navegador */
+/* Personalização das barras de rolagem em navegadores baseados em Webkit */
 ::-webkit-scrollbar {
-    width: 6px;  /* Largura da barra de rolagem vertical */
-    height: 6px;  /* Altura da barra de rolagem horizontal */
+    width: 6px; /* Define a largura da barra vertical */
+    height: 6px; /* Define a altura da barra horizontal */
 }
 
 /* Estilo para o trilho da barra de rolagem */
-::-webkit-scrollbar-track { background-color: #212121; } /* Cor do trilho da barra de rolagem */
-
-/* Estilo para o "thumb" da barra de rolagem */
-::-webkit-scrollbar-thumb {
-    background-color: #b29e84;  /* Cor do "thumb" */
-    border-radius: 10px;  /* Bordas arredondadas */
+::-webkit-scrollbar-track {
+    background-color: #212121; /* Cor do fundo do trilho */
 }
 
-/* Efeito de hover no "thumb" */
-::-webkit-scrollbar-thumb:hover { background-color: #b29e84a9; } /* Cor do "thumb" durante o hover */
+/* Estilo do "thumb" da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background-color: #b29e84; /* Cor do "thumb" para destaque */
+    border-radius: 10px; /* Bordas arredondadas para suavidade */
+}
 
-/* Estilo para os botões de rolagem */
-::-webkit-scrollbar-button { background-color: #212121; } /* Cor dos botões de rolagem */
+/* Efeito ao passar o mouse sobre o "thumb" */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #b29e84a9; /* Fundo levemente mais claro no hover */
+}
+
+/* Estilo para botões de rolagem */
+::-webkit-scrollbar-button {
+    background-color: #212121; /* Cor consistente com o trilho */
+}

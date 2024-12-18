@@ -3,7 +3,7 @@
 <head>
     <!-- Definindo o conjunto de caracteres para o HTML (UTF-8) e a meta tag de visualização para dispositivos móveis -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura o layout para dispositivos móveis -->
     <title>Sítio Bela Vista</title> <!-- Título que aparece na aba do navegador -->
 
     <!-- Link para os ícones de Bootstrap, usados para ícones no site -->
@@ -15,7 +15,6 @@
     <!-- Carregamento de fontes do Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Carrega várias fontes para diferentes seções do site -->
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Pacifico&family=Poiret+One&family=Quicksand:wght@300..700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     
     <!-- Link para o Bootstrap CSS para facilitar a estilização responsiva e o layout -->
@@ -27,7 +26,7 @@
 <body>
     <!-- Cabeçalho (Header) da página, incluindo a barra de navegação -->
     <header>
-        <nav class="navbar navbar-expand-lg mx-4">
+        <nav class="navbar navbar-expand-lg mx-4"> <!-- Navbar responsiva que se adapta ao tamanho da tela -->
             <!-- Logo do Sítio no menu -->
             <img class="navbar-brand img-fluid" src="/images/logo.png" alt="Sítio Bela Vista Logo" style="max-width: 70px; height: auto;">
             
@@ -56,7 +55,7 @@
                         <a href="contato.html" class="nav-link">Contato</a>
                     </li>
                     <li class="nav-item">
-                        <a href="perfil.html" class="nav-link active">Perfil</a>
+                        <a href="perfil.html" class="nav-link active">Perfil</a> <!-- Página atual é destacada com a classe "active" -->
                     </li>
         
                     <!-- Link para a página de login, com ícone de usuário -->
@@ -67,23 +66,28 @@
             </div>
         </nav>
     </header>
+
     <main>
+        <!-- Seção do conteúdo principal da página -->
         <section>
             <article>
                 <!-- Seção de título do formulário de login, com uma imagem de fundo -->
                 <div class="titulo-login position-relative">
-                    <span class="titulo-texto-login">Perfil</span>
+                    <span class="titulo-texto-login">Perfil</span> <!-- Texto do título centralizado -->
                     <img src="/images/por-do-sol.jpg" class="img-fluid img-sol" alt="Sítio Bela Vista Por do Sol" width="100%">
                 </div>
             </article>
         </section>
+
         <section>
             <article class="d-flex justify-content-center align-items-center">
+                <!-- Container centralizado com espaços para os botões e o formulário -->
                 <div class="container p-5">
                     <div class="row d-flex justify-content-center">
                         <!-- Coluna dos botões -->
                         <div class="col-12 col-md-4 col-lg-3 mb-4">
                             <div class="d-grid gap-3 bg-light p-3 rounded-3">
+                                <!-- Botões de navegação dentro da seção de perfil -->
                                 <button class="btn btn-outline-success active">Dados Pessoais</button>
                                 <button class="btn btn-outline-success">Dados da Conta</button>
                                 <button class="btn btn-outline-success">Segurança</button>
@@ -135,7 +139,7 @@
                                     </div>
                                 </div>
         
-                                <!-- Botões de Ação -->
+                                <!-- Botões de Ação (Salvar e Cancelar) -->
                                 <div class="d-flex gap-2">
                                     <button type="submit" class="btn btn-outline-success flex-fill">Salvar</button>
                                     <button type="reset" class="btn btn-outline-danger flex-fill">Cancelar</button>
@@ -154,12 +158,12 @@
             <div class="d-flex">
                 <!-- Copyright e mensagem de direitos autorais -->
                 <p class="text-white">&copy; 2024 Sítio Bela Vista. Todos os direitos reservados.</p>
-                <a href="cadastro.html" class="btn btn-light ms-auto">Cadastre-se</a></a>
+                <a href="cadastro.html" class="btn btn-light ms-auto">Cadastre-se</a>
             </div>
             <!-- Links para páginas de privacidade, termos e redes sociais -->
             <p>
-                <a href="#" class="text-white">Privacidade</a> <span  class="text-white">|</span>
-                <a href="#" class="text-white">Termos de Uso</a> <span  class="text-white">|</span>
+                <a href="#" class="text-white">Privacidade</a> <span class="text-white">|</span>
+                <a href="#" class="text-white">Termos de Uso</a> <span class="text-white">|</span>
                 <a href="https://www.instagram.com/sitio_bela_vistta/" class="text-white">Instagram</a>
             </p>
             <!-- Ícone para voltar ao topo -->

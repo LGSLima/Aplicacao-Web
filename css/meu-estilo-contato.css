@@ -1,14 +1,14 @@
-/* Configurações gerais para todos os elementos: estilo da caixa, cor do texto e fontes */
+/* Configurações globais para todos os elementos */
 * {
-    box-sizing: border-box; /* Garantir que o box-model seja aplicado corretamente */
+    box-sizing: border-box; /* Garante que o box-model seja aplicado corretamente */
     color: #253439; /* Cor do texto padrão */
     font-family: "Quicksand", sans-serif; /* Fonte padrão para o conteúdo */
-    font-optical-sizing: auto; /* Ajuste automático de espessura da fonte */
+    font-optical-sizing: auto; /* Ajuste automático da espessura da fonte */
     font-weight: 500; /* Peso médio da fonte */
-    font-style: normal; /* Estilo normal de fonte */
+    font-style: normal; /* Estilo de fonte normal */
 }
 
-/* Estiliza o body da página para garantir um layout flexível e que ocupe toda a altura */
+/* Estilos do corpo da página */
 body {
     scrollbar-width: thin; /* Barra de rolagem mais fina no Firefox */
     scrollbar-color: #212121; /* Cor personalizada para a barra de rolagem no Firefox */
@@ -18,22 +18,28 @@ body {
     margin: 0; /* Remove as margens padrão do navegador */
 }
 
-/* Permite que o conteúdo principal ocupe todo o espaço disponível */
-main { flex-grow: 1; } /* Faz o conteúdo crescer e ocupar o espaço restante */
+/* Permite que o conteúdo principal ocupe o restante do espaço */
+main { 
+    flex-grow: 1; 
+}
 
-/* Fonte de contatos com estilo específico */
+/* Estiliza o título principal (h1) */
 h1 {
     font-family: 'Pacifico', cursive; /* Fonte cursiva para o título */
     font-style: normal; /* Estilo de fonte normal */
 }
 
-/* Ajuste para a barra de navegação, garantindo que ocupe toda a altura disponível */
-.navbar { height: 100%; }
+/* Estilos para a barra de navegação */
+.navbar { 
+    height: 100%; /* Garantir que a navbar ocupe toda a altura */
+}
 
-/* Adiciona uma borda ao redor da imagem de fundo */
-.img-sol { outline: solid 2px #b29e84; } /* Borda ao redor da imagem com cor personalizada */
+/* Adiciona uma borda à imagem de fundo */
+.img-sol { 
+    outline: solid 2px #b29e84; /* Borda ao redor da imagem com cor personalizada */
+}
 
-/* Estilos para as classes de botão e fundo com cor personalizada */
+/* Estilos para os botões de sucesso */
 .bg-success, .btn-success { 
     background-color: #245153 !important; /* Cor personalizada de fundo verde */
     border-color: #245153; /* Cor personalizada da borda */
@@ -50,13 +56,13 @@ h1 {
     border-color: #245153; /* Borda verde no hover */
 }
 
-/* Estilos para a área de apresentação, com centralização do conteúdo */
+/* Estilos para a área de apresentação de login */
 .titulo-login {
-    position: relative; /* Permite a centralização do texto dentro da área */
+    position: relative; /* Permite o posicionamento exato do texto */
     text-align: center; /* Centraliza o texto */
 }
 
-/* Estiliza o texto dentro da apresentação com sombra e ajuste de fonte */
+/* Estilos para o texto dentro da área de login */
 .titulo-texto-login {
     position: absolute; /* Permite o posicionamento exato do texto */
     top: 50%; /* Posiciona o texto verticalmente no centro */
@@ -69,45 +75,47 @@ h1 {
     font-family: "Pacifico", cursive; /* Fonte cursiva específica */
 }
 
-/* Estilos para o fundo da classe bg-warning */
-.bg-warning { background-color: #b29e84 !important; } /* Cor de fundo personalizada */
-
-.form-container {
-    background-color: #f8f9fa; /* Cor de fundo clara */
-    border-radius: 10px;       /* Bordas arredondadas */
-    padding: 0 15px 10px 15px;           /* Espaçamento interno */
+/* Estilos para o fundo com a classe bg-warning */
+.bg-warning { 
+    background-color: #b29e84 !important; /* Cor de fundo personalizada */
 }
 
-/* Estilos para o botão de login, incluindo padding, bordas e arredondamento */
+/* Estilos para o botão de login */
 #botao-login span {
     padding: 10px; /* Adiciona espaço ao redor do texto */
     border: solid 1px; /* Borda ao redor do botão */
     border-radius: 2px; /* Bordas arredondadas */
 }
 
-/* Estilo para o botão de login quando o mouse passa por cima (hover) */
+/* Estilo para o botão de login ao passar o mouse (hover) */
 #botao-login span:hover {
     background-color: #e6e6e6; /* Muda o fundo para um cinza claro quando o botão é hoverizado */
-    transition: background ease 0.4s; /* Adiciona um efeito de transição suave na mudança de fundo, durando 0.4 segundos */
+    transition: background ease 0.4s; /* Adiciona um efeito de transição suave na mudança de fundo */
 }
 
-/* Estilização das barras de rolagem no navegador */
+/* Estilos para as barras de rolagem no navegador */
 ::-webkit-scrollbar {
-    width: 6px;  /* Largura da barra de rolagem vertical */
-    height: 6px;  /* Altura da barra de rolagem horizontal */
+    width: 6px; /* Largura da barra de rolagem vertical */
+    height: 6px; /* Altura da barra de rolagem horizontal */
 }
 
 /* Estilo para o trilho da barra de rolagem */
-::-webkit-scrollbar-track { background-color: #212121; } /* Cor do trilho da barra de rolagem */
+::-webkit-scrollbar-track { 
+    background-color: #212121; /* Cor do trilho da barra de rolagem */
+}
 
 /* Estilo para o "thumb" da barra de rolagem */
 ::-webkit-scrollbar-thumb {
-    background-color: #b29e84;  /* Cor do "thumb" */
-    border-radius: 10px;  /* Bordas arredondadas */
+    background-color: #b29e84; /* Cor do "thumb" */
+    border-radius: 10px; /* Bordas arredondadas */
 }
 
 /* Efeito de hover no "thumb" */
-::-webkit-scrollbar-thumb:hover { background-color: #b29e84a9; } /* Cor do "thumb" durante o hover */
+::-webkit-scrollbar-thumb:hover { 
+    background-color: #b29e84a9; /* Cor do "thumb" durante o hover */
+}
 
 /* Estilo para os botões de rolagem */
-::-webkit-scrollbar-button { background-color: #212121; } /* Cor dos botões de rolagem */
+::-webkit-scrollbar-button { 
+    background-color: #212121; /* Cor dos botões de rolagem */
+}

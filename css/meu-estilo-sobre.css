@@ -1,135 +1,166 @@
 /* Configurações gerais para todos os elementos: estilo de caixa, cor do texto e fontes */
 * {
-    box-sizing: border-box;
-    color: #253439;
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
+    box-sizing: border-box; /* Garante que padding e borda sejam incluídos nas dimensões do elemento */
+    color: #253439; /* Cor padrão do texto */
+    font-family: "Quicksand", sans-serif; /* Fonte geral utilizada no site */
+    font-optical-sizing: auto; /* Ajuste automático da exibição da fonte */
+    font-weight: 500; /* Peso da fonte (semibold) */
+    font-style: normal; /* Estilo normal para a fonte */
 }
 
 /* Estilo geral para o body: layout flexível e altura mínima */
 body {
     scrollbar-width: thin; /* Barra de rolagem mais fina no Firefox */
-    scrollbar-color: #212121; /* Cor personalizada para o Firefox */
-    display: flex; /* Flexbox para o layout */
-    flex-direction: column; /* Empilhar os elementos verticalmente */
+    scrollbar-color: #212121; /* Cor personalizada para a barra de rolagem no Firefox */
+    display: flex; /* Usando o modelo Flexbox para o layout */
+    flex-direction: column; /* Empilhamento dos elementos de forma vertical */
     min-height: 100vh; /* Garantir que o body ocupe toda a altura da janela */
-    margin: 0; /* Remover margens padrão */
-    padding: 0; /* Remover preenchimento padrão */
+    margin: 0; /* Remover margens padrão do navegador */
+    padding: 0; /* Remover o preenchimento padrão */
 }
 
 /* Principal elemento de conteúdo, ocupando o restante da altura disponível */
-main { flex-grow: 1; } /* Faz o conteúdo crescer e ocupar o espaço restante */
+main {
+    flex-grow: 1; /* Faz o conteúdo crescer e ocupar o espaço restante da tela */
+}
 
 /* Estilo para título h1: fonte cursiva */
 h1 {
-    font-family: 'Pacifico', cursive;
-    font-style: normal;
+    font-family: 'Pacifico', cursive; /* Fonte cursiva para o título */
+    font-style: normal; /* Garantir que o título não tenha estilo itálico */
 }
 
 /* Garante que a barra de navegação ocupe toda a altura disponível */
-.navbar { height: 100%; }
+.navbar {
+    height: 100%; /* A barra de navegação ocupará 100% da altura da tela */
+}
 
 /* Estilos para a área de apresentação com centralização do conteúdo */
 .titulo {
-    position: relative;
+    position: relative; /* Permite o uso de posicionamento absoluto dentro do título */
     text-align: center; /* Centraliza o conteúdo horizontalmente */
 }
 
 /* Texto centralizado sobre a imagem de fundo na seção de título */
 .titulo-texto, .titulo-texto-2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Ajusta o texto para uma centralização perfeita */
-    font-size: 5vw; /* Tamanho relativo à largura da tela */
-    font-family: "Pacifico", cursive;
-    font-weight: bold;
+    position: absolute; /* Posicionamento absoluto em relação ao elemento pai */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta a posição para garantir a centralização perfeita */
+    font-size: 5vw; /* Tamanho da fonte relativo à largura da tela (5% da largura da tela) */
+    font-family: "Pacifico", cursive; /* Fonte cursiva personalizada */
+    font-weight: bold; /* Título em negrito */
 }
 
 /* Estilo para a imagem de fundo na seção de título */
-.sitio-header { outline: solid 2px #b29e84; } /* Adiciona uma borda ao redor da imagem */
+.sitio-header {
+    outline: solid 2px #b29e84; /* Adiciona uma borda ao redor da imagem de fundo */
+}
 
 /* Estilos para o texto de apresentação */
 .titulo-texto {
-    color: white; /* Cor do texto */
-    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.6); /* Sombra para destacar o texto */
+    color: white; /* Cor branca para o texto */
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.6); /* Adiciona sombra ao texto para maior destaque */
 }
 
-.titulo-texto-2 { color: #253439; } /* Cor do texto para o título secundário */
+.titulo-texto-2 {
+    color: #253439; /* Cor do texto para o título secundário */
+}
 
 /* Estilos para a classe bg-warning: cor de fundo personalizada */
-.bg-warning { background-color: #b29e84 !important; }
+.bg-warning {
+    background-color: #b29e84 !important; /* Cor de fundo dourada */
+}
 
 /* Estilos para a classe bg-success e btn-success: cor de fundo verde */
-.bg-success, .btn-success { background-color: #245153 !important; }
+.bg-success, .btn-success {
+    background-color: #245153 !important; /* Cor de fundo verde para classes de sucesso */
+}
 
 /* Estilização para texto de sucesso (ex: mensagens de sucesso) */
-.text-success { color: #245153; }
+.text-success {
+    color: #245153; /* Cor verde para textos relacionados ao sucesso */
+}
 
 /* Estilo para a classe sitio-img (imagens com borda arredondada e personalizada) */
 .sitio-img {
-    border-top-left-radius: 130px; /* Borda superior esquerda arredondada */
-    border-bottom-right-radius: 130px; /* Borda inferior direita arredondada */
-    border: solid 2px;
+    border-top-left-radius: 130px; /* Bordas arredondadas no canto superior esquerdo */
+    border-bottom-right-radius: 130px; /* Bordas arredondadas no canto inferior direito */
+    border: solid 2px; /* Borda sólida de 2px */
     border-color: #b29e84; /* Cor da borda */
 }
 
 /* Container de conteúdo com padding */
-.container-fluid { padding: 20px; }
+.container-fluid {
+    padding: 20px; /* Adiciona espaçamento interno ao redor do conteúdo */
+}
 
 /* Estilo do bloco de citação (blockquote) para fontes e margens */
 .blockquote h1 {
-    font-size: 2rem; /* Tamanho da fonte para h1 dentro do blockquote */
-    margin-bottom: 1rem;
+    font-size: 2rem; /* Tamanho da fonte do título dentro do blockquote */
+    margin-bottom: 1rem; /* Espaço abaixo do título */
 }
 
 .blockquote p {
     font-size: 1rem; /* Tamanho da fonte para o parágrafo */
-    line-height: 1.6; /* Espaçamento entre linhas */
-    color: #555; /* Cor do texto */
+    line-height: 1.6; /* Espaçamento entre linhas para maior legibilidade */
+    color: #555; /* Cor do texto do parágrafo */
 }
 
 /* Estilo para as imagens com classe sito-img */
 .sitio-img {
-    max-width: 100%; /* Garante que a imagem se ajuste ao contêiner */
+    max-width: 100%; /* Garante que a imagem ocupe no máximo 100% da largura do contêiner */
     height: auto; /* Mantém as proporções da imagem */
-    border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para um efeito mais limpo */
+    border-radius: 8px; /* Bordas arredondadas para um visual mais suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para um efeito visual mais clean */
 }
 
 /* Ajustes para telas maiores (largura mínima de 992px) */
 @media (min-width: 992px) {
     .blockquote h1 {
-        font-size: 2.5rem; /* Aumenta o tamanho da fonte para telas maiores */
+        font-size: 2.5rem; /* Aumenta o tamanho da fonte para telas grandes */
     }
 
     .blockquote p {
-        font-size: 1.125rem; /* Aumenta o tamanho do texto */
+        font-size: 1.125rem; /* Aumenta o tamanho do texto para uma melhor legibilidade */
     }
 }
 
 /* Ajustes para telas pequenas (largura máxima de 768px) */
 @media (max-width: 768px) {
     .blockquote {
-        margin-bottom: 20px; /* Ajusta a margem inferior do blockquote */
+        margin-bottom: 20px; /* Ajusta a margem inferior do blockquote em telas pequenas */
     }
+}
+
+/* Estilo para as imagens com classe equipe-img */
+.equipe-img {
+    max-width: 100%; /* Garante que a imagem ocupe no máximo 100% da largura do contêiner */
+    height: auto; /* Mantém as proporções da imagem */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para um efeito visual mais clean */
+    border: solid 2px; /* Borda sólida de 2px */
+    border-color: #b29e84; /* Cor da borda */
 }
 
 /* Estilos específicos para o botão de login */
 #botao-login span {
-    padding: 10px; /* Define o espaçamento interno do botão para 10px, criando um espaço entre o conteúdo e as bordas */
-    border: solid 1px; /* Aplica uma borda sólida de 1px em torno do botão */
-    border-radius: 2px; /* Arredonda ligeiramente os cantos da borda, com um raio de 2px */
+    padding: 10px; /* Define o espaçamento interno do botão */
+    border: solid 1px; /* Aplica uma borda sólida ao redor do botão */
+    border-radius: 2px; /* Arredonda ligeiramente os cantos */
 }
 
 /* Estilo para o botão de login quando o mouse passa por cima (hover) */
 #botao-login span:hover {
-    background-color: #e6e6e6; /* Muda o fundo para um cinza claro quando o botão é hoverizado */
-    transition: background ease 0.4s; /* Adiciona um efeito de transição suave na mudança de fundo, durando 0.4 segundos */
+    background-color: #e6e6e6; /* Muda o fundo para cinza claro quando o botão é hoverizado */
+    transition: background ease 0.4s; /* Transição suave para a mudança de fundo */
 }
 
+/* Foto da equipe */
+#equipe {
+    width: 250px; /* Largura da imagem */
+    height: 250px; /* Altura da imagem */
+}
 
 /* Estilos personalizados para a barra de rolagem (Webkit - Chrome, Safari) */
 ::-webkit-scrollbar {
@@ -138,7 +169,9 @@ h1 {
 }
 
 /* Estilo do trilho da barra de rolagem (área onde a barra se move) */
-::-webkit-scrollbar-track { background-color: #212121; } /* Cor do fundo do trilho */
+::-webkit-scrollbar-track {
+    background-color: #212121; /* Cor do fundo do trilho */
+}
 
 /* Estilo do "thumb" (parte que se move) da barra de rolagem */
 ::-webkit-scrollbar-thumb {
@@ -147,24 +180,11 @@ h1 {
 }
 
 /* Cor do "thumb" quando em hover */
-::-webkit-scrollbar-thumb:hover { background-color: #b29e84a9; }
-
-/* Estilo dos botões da barra de rolagem */
-::-webkit-scrollbar-button { background-color: #212121; }
-
-/*foto de equipe */
-#equipe{
-    width: 250px;
-    height: 250px;
-    
+::-webkit-scrollbar-thumb:hover {
+    background-color: #b29e84a9; /* Cor do "thumb" quando o mouse passa por cima */
 }
 
-/* Estilo para as imagens com classe equipe-img */
-.equipe-img {
-    max-width: 100%; /* Garante que a imagem se ajuste ao contêiner */
-    height: auto; /* Mantém as proporções da imagem */
-    border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para um efeito mais limpo */
-    border: solid 2px;
-    border-color: #b29e84; /* Cor da borda */
+/* Estilo dos botões da barra de rolagem */
+::-webkit-scrollbar-button {
+    background-color: #212121; /* Cor dos botões da barra de rolagem */
 }
