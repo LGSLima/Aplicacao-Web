@@ -143,6 +143,41 @@ h1 {
     border-color: #b29e84; /* Cor da borda */
 }
 
+/* Estilo para o título das cards */
+.card-title {
+    font-weight: bold; /* Títulos das cards em negrito */
+}
+
+/* Estilos para o corpo das cards */
+.card-body {
+    min-height: 165px; /* Altura mínima do corpo da card */
+    max-height: 185px; /* Altura máxima do corpo da card */
+}
+
+/* Estilo específico para o corpo da card com classe 'cd-title' */
+.card-body.cd-title {
+    min-height: 45px; /* Altura mínima para o corpo de cards com título */
+    padding: 5px; /* Espaçamento interno de 5px */
+}
+
+/* Estilos para botões com tema de sucesso */
+.bg-success, .btn-success {
+    background-color: #245153 !important; /* Fundo verde escuro para destaque */
+    border-color: #245153; /* Borda combinando com o fundo */
+}
+
+/* Estilo para botões com contorno de sucesso */
+.btn-outline-success {
+    color: #245153; /* Texto com cor de destaque */
+    border-color: #245153; /* Borda definida com a mesma cor */
+}
+
+/* Efeito ao passar o mouse sobre os botões de sucesso */
+.btn-outline-success:hover {
+    background-color: #245153; /* Fundo muda para verde escuro */
+    border-color: #245153; /* Mantém a borda consistente */
+}
+
 /* Estilos específicos para o botão de login */
 #botao-login span {
     padding: 10px; /* Define o espaçamento interno do botão */
