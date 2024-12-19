@@ -84,12 +84,31 @@ A estrutura do código segue boas práticas de desenvolvimento, com uma organiza
 ## Screenshots
 
 ![principal1](/screenshots/principal1.jpg)
-
 ![principal2](/screenshots/principal2.png)
-
 ![principal3](/screenshots/principal3.png)
-
 ![principal4](/screenshots/principal4.png)
+![principal5](/screenshots/principal5.png)
+
+![sobre1](/screenshots/sobre1.png)
+![sobre2](/screenshots/sobre2.png)
+![sobre3](/screenshots/sobre3.png)
+![sobre4](/screenshots/sobre4.png)
+![sobre5](/screenshots/sobre5.png)
+
+![reserva1](/screenshots/reserva1.png)
+![reserva2](/screenshots/reserva2.png)
+
+![contato1](/screenshots/contato1.png)
+![contato2](/screenshots/contato2.png)
+
+![perfil1](/screenshots/perfil1.png)
+![perfil2](/screenshots/perfil2.png)
+
+![entrar1](/screenshots/entrar1.png)
+![entrar2](/screenshots/entrar2.png)
+
+![cadastro1](/screenshots/cadastro1.png)
+![cadastro2](/screenshots/cadastro2.png)
 
 ## Como Executar o Projeto
 
