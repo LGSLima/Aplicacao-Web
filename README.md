@@ -98,7 +98,7 @@ A estrutura do código segue boas práticas de desenvolvimento, com uma organiza
 
 ![reserva1](/screenshots/reserva1.png)
 ![reserva2](/screenshots/reserva2.png)
-![reserva2](/screenshots/reserva3.png)
+![sobre4](/screenshots/sobre4.png)
 ![principal5](/screenshots/principal5.png)
 
 ![contato1](/screenshots/contato1.png)
