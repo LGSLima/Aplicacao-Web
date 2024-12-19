@@ -26,16 +26,16 @@ Framework escolhido:
 
 ## Estrutura do Projeto
 
-O projeto é composto por 6 páginas principais, cada uma contendo uma estrutura comum, mas com conteúdo específico. A seguir estão as páginas e suas descrições:
+O projeto é composto por 7 páginas principais, cada uma contendo uma estrutura comum, mas com conteúdo específico. A seguir estão as páginas e suas descrições:
 
 **Página Principal**:
 
-- Apresentação geral do site, com uma introdução e destaque para as principais funcionalidades da aplicação.
+- Apresentação geral do site, com uma introdução da aplicação.
 - Utiliza o Bootstrap para a estruturação de um carrossel de imagens e botões de chamada para ação, garantindo um layout responsivo e moderno.
 
 **Sobre**:
 
--  Informações sobre o projeto ou a equipe responsável pela aplicação, missão, visão e valores.
+-  Informações sobre o projeto ou a equipe responsável pelo local.
 -  Estilo de texto e estruturação com o Bootstrap, utilizando componentes como cards e columns para organizar as informações de forma clara e atraente.
 
 **Reserva**:
@@ -45,7 +45,7 @@ O projeto é composto por 6 páginas principais, cada uma contendo uma estrutura
 
 **Contato**:
 
--  Página com informações de contato, como endereço, telefone e e-mail, além da possibilidade de interação com a equipe.
+-  Página com informações de contato, como telefone, e-mail e instagram, além da possibilidade de interação com a equipe.
 -  Estilizado com o Bootstrap para garantir uma apresentação limpa e organizada das informações, além de um formulário de contato responsivo e funcional.
 
 **Página de Login**:
@@ -153,11 +153,13 @@ Este projeto está licenciado sob a MIT License.
 
 ---
 
-# Web Application with Bootstrap. (EN)
+# Web Application with Bootstrap (EN)
+
+La versión en español está justo debajo de la versión en inglés.
 
 ## Project Description
 
-This is a web application project consisting of 6 pages, developed using one of the three popular CSS frameworks: Bootstrap, Bulma, and Materialize. The application is fully responsive and adaptable to different screen sizes, ensuring a consistent and pleasant user experience on both mobile and desktop devices. The project follows an organized structure with a header, main content, and footer, and is designed to be easily scalable and maintainable.
+This is a web application project consisting of 6 or more pages, developed using one of the three popular CSS frameworks: Bootstrap, Bulma, and Materialize. The application is fully responsive and adaptable to different screen sizes, ensuring a consistent and pleasant user experience across mobile and desktop devices. The project follows an organized structure with a header, main content, and footer, designed to be easily scalable and maintainable.
 
 Chosen Framework:
 
@@ -170,68 +172,68 @@ Chosen Framework:
 
 ## Features
 
-- **Header**: With logo and navigation menu, using the navbar structure from the frameworks. The menu contains links that redirect the user to various pages of the application.
-- **Main Section**: Contains the central content of each page, such as informational text, images, icons, and other visual interactions. The layout is organized using the grid and flexbox systems from the frameworks.
+- **Header**: Includes a logo and navigation menu using the framework's navbar structure. The menu contains links that redirect users to different pages of the application.
+- **Main Section**: Contains the core content of each page, such as informational text, images, icons, and other visual interactions. The layout is organized using the framework's grid and flexbox systems.
 - **Footer**: Includes contact information, useful links to other pages, and social media. The footer is fixed at the bottom of the page on both mobile and desktop devices.
 - **Responsive Design**: The entire interface is responsive, automatically adapting to different screen sizes and devices, thanks to the use of grids and responsive components from the frameworks.
-- **Code Comments**: The code contains detailed explanatory comments on how each framework was used, making it easier to understand and maintain the project in the future.
+- **Code Comments**: The code includes detailed explanatory comments on how each framework was used, making it easier to understand and maintain in the future.
 
 ## Project Structure
 
-The project consists of 6 main pages, each containing a common structure but with specific content. Below are the pages and their descriptions:
+The project consists of 7 main pages, each with a common structure but specific content. Below are the pages and their descriptions:
 
-**Home Page**:
+**Main Page**:
 
-- General introduction to the site, highlighting the main features of the application.
-- Uses Bootstrap to structure an image carousel and call-to-action buttons, ensuring a responsive and modern layout.
+- General site presentation with an introduction to the application.
+- Uses Bootstrap for structuring an image carousel and call-to-action buttons, ensuring a responsive and modern layout.
 
 **About**:
 
-- Information about the project or the team responsible for the application, including mission, vision, and values.
-- Text styling and layout structure with Bootstrap, using components like cards and columns to organize information clearly and attractively.
+- Information about the project or the team responsible for the site.
+- Styled with Bootstrap, using components like cards and columns to organize information clearly and attractively.
 
 **Booking**:
 
-- Details of the booking system, allowing the user to make reservations for services or products easily.
-- The interface is built with Bootstrap, using responsive buttons and forms, creating a modern and smooth user experience.
+- Details of the booking system, allowing users to make service reservations easily.
+- The interface is built with Bootstrap, featuring responsive buttons and forms for a modern and fluid user experience.
 
 **Contact**:
 
-- Page with contact information, such as address, phone, email and the possibility to comunicate with the team.
-- Styled with Bootstrap to ensure a clean and organized presentation of information, along with a responsive and functional contact form.
+- A page with contact information such as phone, email, and Instagram, along with the ability to interact with the team.
+- Styled with Bootstrap to ensure a clean and organized presentation of information, along with a functional and responsive contact form.
 
 **Login Page**:
 
 - Login screen for users to access their accounts.
-- Styled with Bootstrap, providing a clear and simple interface, with field validation and visual feedback for authentication errors.
+- Styled with Bootstrap, offering a clear and simple interface with field validation and visual feedback for authentication errors.
 
-**Signup Page**:
+**Registration Page**:
 
-- Page for users to sign up for the application, entering information such as name, email, and password.
-- Uses Bootstrap to create a dynamic and intuitive form, with validation and easy navigation, adaptable to different devices.
+- Page for users to register on the application by entering information such as name, email, and password.
+- Built with Bootstrap to create a dynamic and intuitive form with validation and easy navigation, adaptable to different devices.
 
 **User Profile Page**:
 
-- A page dedicated to the user, where they can view and edit their personal information, such as name, email, and password.
-- Organized with Bootstrap, ensuring a fluid and responsive layout, with a focus on usability and user experience.
+- A dedicated page where users can view and edit their personal information, such as name, email, and password.
+- Organized with Bootstrap, ensuring a fluid and responsive layout focused on usability and user experience.
 
 ## Technologies and Frameworks Used
 
 **Bootstrap**
 
-- **Grid System**: Used to create fluid and responsive layouts, ensuring that the application is easily viewable on mobile devices and desktops.
-- **Navbar**: The navigation menu was developed using the Bootstrap navbar component, providing a responsive and user-friendly menu for different devices.
-- **Buttons and Cards**: Button and card styling with Bootstrap’s predefined classes, ensuring visual consistency and interactivity on the site.
-- **Forms**: Bootstrap makes it easy to create dynamic and responsive forms, with validation and predefined styles for input fields, buttons, and error messages.
-- **Responsiveness**: Bootstrap uses the grid system and responsive components, automatically adapting the layout to different screen sizes, offering a smooth user experience on both mobile and desktop devices.
+- **Grid System**: Used to create fluid and responsive layouts, ensuring the application is easily viewed on mobile and desktop devices.
+- **Navbar**: The navigation menu was developed using Bootstrap's navbar component, providing a responsive and user-friendly menu for different devices.
+- **Buttons and Cards**: Buttons and cards were styled using Bootstrap's predefined classes, ensuring visual consistency and interactivity across the site.
+- **Forms**: Bootstrap facilitates the creation of dynamic and responsive forms with validation and predefined styles for input fields, buttons, and error messages.
+- **Responsiveness**: Bootstrap uses a grid system and responsive components, automatically adapting the layout to different screen sizes, offering a seamless user experience on mobile and desktop devices.
 
 ## Code Structure
 
-The code structure follows best development practices, with clear and modular organization:
+The code follows development best practices, with clear and modular organization:
 
 - **HTML**: Each page is structured with semantic HTML, using appropriate tags to enhance accessibility and SEO (Search Engine Optimization).
-- **CSS**: Additional styling was done using the classes from the frameworks mentioned, but customizations are made when necessary to meet the specific needs of the project.
-- **Comments**: The entire code contains detailed explanatory comments about how the frameworks were applied and how each section of the page works. This helps future developers understand the code and enables efficient maintenance.
+- **CSS**: Additional stylizations were made using the mentioned frameworks' classes, with customizations where necessary to meet the project's specific needs.
+- **Comments**: The entire codebase contains detailed explanatory comments about how the frameworks were applied and how each section of the page works. This facilitates code understanding for future developers and allows for efficient maintenance.
 
 ## How to Run the Project
 
@@ -269,11 +271,11 @@ This project is licensed under the MIT License.
 
 ---
 
-# Aplicación Web con Bootstrap
+# Aplicación Web con Bootstrap (ES)
 
 ## Descripción del Proyecto
 
-Este es un proyecto de aplicación web compuesto por 6 o más páginas, desarrollado utilizando uno de los tres frameworks CSS populares: Bootstrap, Bulma y Materialize. La aplicación es totalmente responsiva y adaptable a diferentes tamaños de pantalla, garantizando una experiencia de usuario consistente y agradable en dispositivos móviles y escritorios. El proyecto sigue una estructura organizada con encabezado, contenido principal y pie de página, y fue diseñado para ser fácilmente escalable y de fácil mantenimiento.
+Este es un proyecto de aplicación web compuesto por 6 o más páginas, desarrollado utilizando uno de los tres frameworks CSS populares: Bootstrap, Bulma y Materialize. La aplicación es completamente responsiva y adaptable a diferentes tamaños de pantalla, garantizando una experiencia de usuario consistente y agradable tanto en dispositivos móviles como en computadoras de escritorio. El proyecto sigue una estructura organizada con encabezado, contenido principal y pie de página, diseñado para ser fácilmente escalable y de fácil mantenimiento.
 
 Framework elegido:
 
@@ -286,67 +288,67 @@ Framework elegido:
 
 ## Funcionalidades
 
-- **Encabezado**: Con logo y menú de navegación, utilizando la estructura de barra de navegación (navbar) de los frameworks. El menú contiene enlaces que redirigen al usuario a las diversas páginas de la aplicación.
-- **Sección Principal**: Contiene el contenido central de cada página, como texto informativo, imágenes, íconos y otras interacciones visuales. La organización del layout se hace utilizando los sistemas de grid y flexbox de los frameworks.
-- **Pie de Página**: Incluye información de contacto, enlaces útiles para otras páginas y redes sociales. El pie de página es fijo en la parte inferior de la página en dispositivos móviles y escritorios.
-- **Diseño Responsivo**: Toda la interfaz es responsiva, adaptándose automáticamente a diferentes tamaños de pantalla y dispositivos, gracias al uso de las grids y componentes responsivos de los frameworks.
+- **Encabezado**: Incluye un logotipo y un menú de navegación utilizando la estructura de barra de navegación (navbar) del framework. El menú contiene enlaces que redirigen al usuario a las diferentes páginas de la aplicación.
+- **Sección Principal**: Contiene el contenido central de cada página, como texto informativo, imágenes, íconos y otras interacciones visuales. El diseño se organiza utilizando los sistemas de grid y flexbox del framework.
+- **Pie de Página**: Incluye información de contacto, enlaces útiles a otras páginas y redes sociales. El pie de página está fijo en la parte inferior de la página en dispositivos móviles y computadoras de escritorio.
+- **Diseño Responsivo**: Toda la interfaz es responsiva, adaptándose automáticamente a diferentes tamaños de pantalla y dispositivos, gracias al uso de grids y componentes responsivos del framework.
 - **Comentarios en el Código**: El código contiene comentarios explicativos detallados sobre cómo se utilizó cada framework, facilitando la comprensión y el mantenimiento futuro.
 
 ## Estructura del Proyecto
 
-El proyecto está compuesto por 6 páginas principales, cada una con una estructura común, pero con contenido específico. A continuación se describen las páginas y sus descripciones:
+El proyecto consta de 7 páginas principales, cada una con una estructura común pero contenido específico. A continuación, las páginas y sus descripciones:
 
 **Página Principal**:
 
-- Presentación general del sitio, con una introducción y resaltado de las principales funcionalidades de la aplicación.
-- Utiliza Bootstrap para estructurar un carrusel de imágenes y botones de llamada a la acción, garantizando un layout responsivo y moderno.
+- Presentación general del sitio, con una introducción a la aplicación.
+- Utiliza Bootstrap para estructurar un carrusel de imágenes y botones de llamada a la acción, asegurando un diseño responsivo y moderno.
 
-**Sobre**:
+**Acerca de**:
 
-- Información sobre el proyecto o el equipo responsable de la aplicación, misión, visión y valores.
-- Estilo de texto y estructuración con Bootstrap, utilizando componentes como cards y columns para organizar la información de manera clara y atractiva.
+- Información sobre el proyecto o el equipo responsable del sitio.
+- Estilizado con Bootstrap, utilizando componentes como cards y columns para organizar la información de manera clara y atractiva.
 
-**Reserva**:
+**Reservas**:
 
-- Detalle del sistema de reservas, permitiendo al usuario hacer reservas de servicios con facilidad.
-- La interfaz se construye con Bootstrap, con botones y formularios responsivos, creando una experiencia de usuario moderna y fluida.
+- Detalles del sistema de reservas, permitiendo al usuario hacer reservas de servicios fácilmente.
+- La interfaz se construye con Bootstrap, con botones y formularios responsivos que crean una experiencia de usuario moderna y fluida.
 
 **Contacto**:
 
-- Página con información de contacto, como dirección, teléfono y correo electrónico, además de la posibilidad de interactuar con el equipo.
-- Estilizado con Bootstrap para garantizar una presentación limpia y organizada de la información, además de un formulario de contacto responsivo y funcional.
+- Página con información de contacto, como teléfono, correo electrónico e Instagram, además de la posibilidad de interactuar con el equipo.
+- Estilizada con Bootstrap para garantizar una presentación limpia y organizada de la información, además de un formulario de contacto funcional y responsivo.
 
-**Página de Login**:
+**Página de Inicio de Sesión**:
 
-- Pantalla de login para que los usuarios accedan a sus cuentas.
+- Pantalla de inicio de sesión para que los usuarios accedan a sus cuentas.
 - Estilizada con Bootstrap, ofreciendo una interfaz clara y simple, con validación de campos y retroalimentación visual para errores de autenticación.
 
 **Página de Registro**:
 
-- Página para que el usuario se registre en la aplicación, introduciendo información como nombre, correo electrónico y contraseña.
-- Usando Bootstrap para crear un formulario dinámico e intuitivo, con validación y fácil navegación, adaptable a diferentes dispositivos.
+- Página para que los usuarios se registren en la aplicación ingresando información como nombre, correo electrónico y contraseña.
+- Construida con Bootstrap para crear un formulario dinámico e intuitivo, con validación y fácil navegación, adaptable a diferentes dispositivos.
 
 **Página de Perfil del Usuario**:
 
 - Página dedicada al usuario, donde puede ver y editar su información personal, como nombre, correo electrónico y contraseña.
-- Organizado con Bootstrap, garantizando un layout fluido y responsivo, con énfasis en la usabilidad y experiencia del usuario.
+- Organizada con Bootstrap, garantizando un diseño fluido y responsivo, con enfoque en la usabilidad y experiencia del usuario.
 
 ## Tecnologías y Frameworks Utilizados
 
 **Bootstrap**
 
-- **Grid System**: Usado para crear layouts fluidos y responsivos, garantizando que la aplicación sea fácilmente visualizada en dispositivos móviles y escritorios.
-- **Navbar**: El menú de navegación fue desarrollado utilizando el componente navbar de Bootstrap, ofreciendo un menú responsivo y fácil de usar para diferentes dispositivos.
-- **Buttons and Cards**: Estilización de botones y tarjetas con las clases predefinidas de Bootstrap, garantizando consistencia visual e interactividad en el sitio.
+- **Grid System**: Usado para crear diseños fluidos y responsivos, garantizando que la aplicación sea fácilmente visualizada en dispositivos móviles y computadoras de escritorio.
+- **Navbar**: El menú de navegación se desarrolló utilizando el componente navbar de Bootstrap, ofreciendo un menú responsivo y fácil de usar para diferentes dispositivos.
+- **Buttons and Cards**: Botones y tarjetas estilizados con las clases predefinidas de Bootstrap, garantizando consistencia visual e interactividad en el sitio.
 - **Forms**: Bootstrap facilita la creación de formularios dinámicos y responsivos, con validación y estilos predefinidos para campos de entrada, botones y mensajes de error.
-- **Responsividad**: Bootstrap utiliza el sistema de grid y componentes responsivos, adaptando automáticamente el layout para diferentes tamaños de pantalla, ofreciendo una experiencia de usuario fluida en dispositivos móviles y escritorios.
+- **Responsividad**: Bootstrap utiliza el sistema de grid y componentes responsivos, adaptando automáticamente el diseño a diferentes tamaños de pantalla, ofreciendo una experiencia de usuario fluida en dispositivos móviles y computadoras de escritorio.
 
 ## Estructura del Código
 
-La estructura del código sigue buenas prácticas de desarrollo, con una organización clara y modular:
+El código sigue buenas prácticas de desarrollo, con una organización clara y modular:
 
-- **HTML**: Cada página está estructurada con HTML semántico, utilizando las etiquetas apropiadas para mejorar la accesibilidad y el SEO (Search Engine Optimization).
-- **CSS**: Se realizaron personalizaciones adicionales utilizando las clases de los frameworks mencionados, pero también hay ajustes cuando es necesario para satisfacer las necesidades específicas del proyecto.
+- **HTML**: Cada página está estructurada con HTML semántico, utilizando las etiquetas apropiadas para mejorar la accesibilidad y el SEO (Optimización de Motores de Búsqueda).
+- **CSS**: Se realizaron estilizaciones adicionales utilizando las clases de los frameworks mencionados, pero también hay personalizaciones cuando es necesario para satisfacer las necesidades específicas del proyecto.
 - **Comentarios**: Todo el código contiene comentarios explicativos detallados sobre cómo se aplicaron los frameworks y cómo funciona cada sección de la página. Esto facilita la comprensión del código para desarrolladores futuros y permite un mantenimiento eficiente.
 
 ## Cómo Ejecutar el Proyecto
