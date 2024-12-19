@@ -81,6 +81,16 @@ A estrutura do código segue boas práticas de desenvolvimento, com uma organiza
 - **CSS**: Estilizações adicionais foram feitas utilizando as classes dos frameworks mencionados, mas também há personalizações quando necessário para atender às necessidades específicas do projeto.
 - **Comentários**: Todo o código contém comentários explicativos detalhados sobre como os frameworks foram aplicados e como cada seção da página funciona. Isso facilita a compreensão do código para desenvolvedores futuros e permite manutenções eficientes.
 
+## Screenshots
+
+![principal1](/screenshots/principal1.jpg)
+
+![principal2](/screenshots/principal2.jpg)
+
+![principal3](/screenshots/principal3.jpg)
+
+![principal4](/screenshots/principal4.jpg)
+
 ## Como Executar o Projeto
 
 1. Clonar o Repositório:
