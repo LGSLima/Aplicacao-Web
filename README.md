@@ -85,11 +85,11 @@ A estrutura do código segue boas práticas de desenvolvimento, com uma organiza
 
 ![principal1](/screenshots/principal1.jpg)
 
-![principal2](/screenshots/principal2.jpg)
+![principal2](/screenshots/principal2.png)
 
-![principal3](/screenshots/principal3.jpg)
+![principal3](/screenshots/principal3.png)
 
-![principal4](/screenshots/principal4.jpg)
+![principal4](/screenshots/principal4.png)
 
 ## Como Executar o Projeto
 
